@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, The Monero Project
+// Copyright (c) 2015-2019, The Dinastycoin Project
 //
 // All rights reserved.
 //
@@ -43,8 +43,8 @@ using namespace epee;
 #include "int-util.h"
 #include "common/dns_utils.h"
 
-#undef MONERO_DEFAULT_LOG_CATEGORY
-#define MONERO_DEFAULT_LOG_CATEGORY "cn"
+#undef DINASTYCOIN_DEFAULT_LOG_CATEGORY
+#define DINASTYCOIN_DEFAULT_LOG_CATEGORY "cn"
 
 namespace cryptonote {
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2019, The Monero Project
+// Copyright (c) 2017-2019, The Dinastycoin Project
 // 
 // All rights reserved.
 // 
@@ -43,8 +43,8 @@ namespace hw {
 
   #ifdef WITH_DEVICE_LEDGER
 
-    #undef MONERO_DEFAULT_LOG_CATEGORY
-    #define MONERO_DEFAULT_LOG_CATEGORY "device.ledger"
+    #undef DINASTYCOIN_DEFAULT_LOG_CATEGORY
+    #define DINASTYCOIN_DEFAULT_LOG_CATEGORY "device.ledger"
 
     /* ===================================================================== */
     /* ===                           Debug                              ==== */
@@ -320,8 +320,8 @@ namespace hw {
     bool device_ledger::reset() {
       reset_buffer();
       int offset = set_command_header_noopt(INS_RESET);
-      memmove(this->buffer_send+offset, MONERO_VERSION, strlen(MONERO_VERSION));
-      offset += strlen(MONERO_VERSION);
+      memmove(this->buffer_send+offset, DINASTYCOIN_VERSION, strlen(DINASTYCOIN_VERSION));
+      offset += strlen(DINASTYCOIN_VERSION);
       this->buffer_send[4] = offset-5;
       this->length_send = offset;
       this->exchange();

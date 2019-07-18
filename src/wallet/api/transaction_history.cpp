@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, The Monero Project
+// Copyright (c) 2015-2019, The Dinastycoin Project
 //
 // All rights reserved.
 //
@@ -42,7 +42,7 @@
 
 using namespace epee;
 
-namespace Monero {
+namespace Dinastycoin {
 
 TransactionHistory::~TransactionHistory() {}
 
@@ -143,8 +143,8 @@ void TransactionHistoryImpl::refresh()
     // confirmed output transactions
     // one output transaction may contain more than one money transfer, e.g.
     // <transaction_id>:
-    //    transfer1: 100XMR to <address_1>
-    //    transfer2: 50XMR  to <address_2>
+    //    transfer1: 100DCY to <address_1>
+    //    transfer2: 50DCY  to <address_2>
     //    fee: fee charged per transaction
     //
 
@@ -245,4 +245,4 @@ void TransactionHistoryImpl::refresh()
 
 } // namespace
 
-namespace Bitmonero = Monero;
+

@@ -1,4 +1,4 @@
-# Copyright (c) 2014-2019, The Monero Project
+# Copyright (c) 2015-2019, The Dinastycoin Project
 #
 # All rights reserved.
 #
@@ -34,9 +34,9 @@ set(simplewallet_headers)
 set(simplewallet_private_headers
   simplewallet.h)
 
-monero_private_headers(simplewallet
+dinastycoin_private_headers(simplewallet
   ${simplewallet_private_headers})
-monero_add_executable(simplewallet
+dinastycoin_add_executable(simplewallet
   ${simplewallet_sources}
   ${simplewallet_headers}
   ${simplewallet_private_headers})

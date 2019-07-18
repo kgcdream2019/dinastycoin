@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, The Monero Project
+// Copyright (c) 2015-2019, The Dinastycoin Project
 // 
 // All rights reserved.
 // 
@@ -594,7 +594,7 @@ std::string block_tracker::dump_data()
 
       ss << "    idx: " << oi.idx
       << ", rct: " << oi.rct
-      << ", xmr: " << oi.amount
+      << ", dcy: " << oi.amount
       << ", key: " << dump_keys(out.key.data)
       << ", msk: " << dump_keys(oi.comm.bytes)
       << ", txid: " << dump_keys(oi.p_tx->hash.data)

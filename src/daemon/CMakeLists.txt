@@ -1,4 +1,4 @@
-# Copyright (c) 2014-2019, The Monero Project
+# Copyright (c) 2015-2019, The Dinastycoin Project
 #
 # All rights reserved.
 #
@@ -62,9 +62,9 @@ set(daemon_private_headers
   ../p2p/p2p_protocol_defs.h
   ../p2p/stdafx.h)
 
-monero_private_headers(daemon
+dinastycoin_private_headers(daemon
   ${daemon_private_headers})
-monero_add_executable(daemon
+dinastycoin_add_executable(daemon
   ${daemon_sources}
   ${daemon_headers}
   ${daemon_private_headers})

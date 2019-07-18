@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, The Monero Project
+// Copyright (c) 2015-2019, The Dinastycoin Project
 //
 // All rights reserved.
 //
@@ -33,7 +33,7 @@
 #include "net/http_client.h"
 #include <string>
 
-namespace Monero {
+namespace Dinastycoin {
 
 class WalletManagerImpl : public WalletManager
 {
@@ -102,4 +102,4 @@ private:
 
 } // namespace
 
-namespace Bitmonero = Monero;
+

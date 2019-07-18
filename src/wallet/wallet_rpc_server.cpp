@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, The Monero Project
+// Copyright (c) 2015-2019, The Dinastycoin Project
 // 
 // All rights reserved.
 // 
@@ -54,8 +54,8 @@ using namespace epee;
 #include "rpc/core_rpc_server_commands_defs.h"
 #include "daemonizer/daemonizer.h"
 
-#undef MONERO_DEFAULT_LOG_CATEGORY
-#define MONERO_DEFAULT_LOG_CATEGORY "wallet.rpc"
+#undef DINASTYCOIN_DEFAULT_LOG_CATEGORY
+#define DINASTYCOIN_DEFAULT_LOG_CATEGORY "wallet.rpc"
 
 #define DEFAULT_AUTO_REFRESH_PERIOD 20 // seconds
 
@@ -67,7 +67,7 @@ namespace
   const command_line::arg_descriptor<std::string> arg_wallet_dir = {"wallet-dir", "Directory for newly created wallets"};
   const command_line::arg_descriptor<bool> arg_prompt_for_password = {"prompt-for-password", "Prompts for password when not provided", false};
 
-  constexpr const char default_rpc_username[] = "monero";
+  constexpr const char default_rpc_username[] = "dinastycoin";
 
   boost::optional<tools::password_container> password_prompter(const char *prompt, bool verify)
   {
@@ -285,7 +285,7 @@ namespace tools
     {
       MINFO("The daemon is not set up to background mine.");
       MINFO("With background mining enabled, the daemon will mine when idle and not on batttery.");
-      MINFO("Enabling this supports the network you are using, and makes you eligible for receiving new monero");
+      MINFO("Enabling this supports the network you are using, and makes you eligible for receiving new dinastycoin");
       MINFO("Set setup-background-mining to 1 in dinasty-wallet-cli to change.");
       return;
     }
@@ -737,7 +737,7 @@ namespace tools
           }
           if (addresses.empty())
           {
-            er.message = std::string("No Monero address found at ") + url;
+            er.message = std::string("No Dinastycoin address found at ") + url;
             return {};
           }
           return addresses[0];
@@ -1965,7 +1965,7 @@ namespace tools
         }
         if (addresses.empty())
         {
-          er.message = std::string("No Monero address found at ") + url;
+          er.message = std::string("No Dinastycoin address found at ") + url;
           return {};
         }
         return addresses[0];
@@ -2752,7 +2752,7 @@ namespace tools
         }
         if (addresses.empty())
         {
-          er.message = std::string("No Monero address found at ") + url;
+          er.message = std::string("No Dinastycoin address found at ") + url;
           return {};
         }
         return addresses[0];
@@ -4059,7 +4059,7 @@ namespace tools
             }
             if (addresses.empty())
             {
-              er.message = std::string("No Monero address found at ") + url;
+              er.message = std::string("No Dinastycoin address found at ") + url;
               return {};
             }
             address = addresses[0];
@@ -4381,7 +4381,7 @@ int main(int argc, char** argv) {
   std::tie(vm, should_terminate) = wallet_args::main(
     argc, argv,
     "dinasty-wallet-rpc [--wallet-file=<file>|--generate-from-json=<file>|--wallet-dir=<directory>] [--rpc-bind-port=<port>]",
-    tools::wallet_rpc_server::tr("This is the RPC monero wallet. It needs to connect to a monero\ndaemon to work correctly."),
+    tools::wallet_rpc_server::tr("This is the RPC dinastycoin wallet. It needs to connect to a dinastycoin\ndaemon to work correctly."),
     desc_params,
     po::positional_options_description(),
     [](const std::string &s, bool emphasis){ epee::set_console_color(emphasis ? epee::console_color_white : epee::console_color_default, true); std::cout << s << std::endl; if (emphasis) epee::reset_console_color(); },

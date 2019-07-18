@@ -1,6 +1,6 @@
-# Anonymity Networks with Monero
+# Anonymity Networks with Dinastycoin
 
-Currently only Tor and I2P have been integrated into Monero. The usage of
+Currently only Tor and I2P have been integrated into Dinastycoin. The usage of
 these networks is still considered experimental - there are a few pessimistic
 cases where privacy is leaked. The design is intended to maximize privacy of
 the source of a transaction by broadcasting it over an anonymity network, while
@@ -87,7 +87,7 @@ P2P anonymity connections. The anonymity network (Tor/i2p) is
 [configured in the same manner](#configuration), except the localhost port
 must be the RPC port (typically 18081 for mainnet) instead of the p2p port:
 
-> HiddenServiceDir /var/lib/tor/data/monero
+> HiddenServiceDir /var/lib/tor/data/dinastycoin
 > HiddenServicePort 18081 127.0.0.1:18081
 
 Then the wallet will be configured to use a Tor/i2p address:
@@ -125,12 +125,12 @@ can distribute the address to its other peers.
 Tor must be configured for hidden services. An example configuration ("torrc")
 might look like:
 
-> HiddenServiceDir /var/lib/tor/data/monero
+> HiddenServiceDir /var/lib/tor/data/dinastycoin
 > HiddenServicePort 28083 127.0.0.1:28083
 
-This will store key information in `/var/lib/tor/data/monero` and will forward
+This will store key information in `/var/lib/tor/data/dinastycoin` and will forward
 "Tor port" 28083 to port 28083 of ip 127.0.0.1. The file
-`/usr/lib/tor/data/monero/hostname` will contain the ".onion" address for use
+`/usr/lib/tor/data/dinastycoin/hostname` will contain the ".onion" address for use
 with `--anonymous-inbound`.
 
 I2P must be configured with a standard server tunnel. Configuration differs by
@@ -149,7 +149,7 @@ sees a transaction over Tor, it could _assume_ (possibly incorrectly) that the
 transaction originated from the peer. If both the Tor connection and an
 IPv4/IPv6 connection have timestamps that are approximately close in value they
 could be used to link the two connections. This is less likely to happen if the
-system clock is fairly accurate - many peers on the Monero network should have
+system clock is fairly accurate - many peers on the Dinastycoin network should have
 similar timestamps.
 
 #### Mitigation
@@ -166,20 +166,20 @@ An ISP can passively monitor `dinastycoind` connections from a node and observe 
 a transaction is sent over a Tor/I2P connection via timing analysis + size of
 data sent during that timeframe. I2P should provide better protection against
 this attack - its connections are not circuit based. However, if a node is
-only using I2P for broadcasting Monero transactions, the total aggregate of
+only using I2P for broadcasting Dinastycoin transactions, the total aggregate of
 I2P data would also leak information.
 
 #### Mitigation
 
 There is no current mitigation for the user right now. This attack is fairly
-sophisticated, and likely requires support from the internet host of a Monero
+sophisticated, and likely requires support from the internet host of a Dinastycoin
 user.
 
 In the near future, "whitening" the amount of data sent over anonymity network
 connections will be performed. An attempt will be made to make a transaction
 broadcast indistinguishable from a peer timed sync command.
 
-### Intermittent Monero Syncing
+### Intermittent Dinastycoin Syncing
 
 If a user only runs `dinastycoind` to send a transaction then quit, this can also
 be used by an ISP to link a user to a transaction.

@@ -28,14 +28,14 @@
         "blockchain_link": {}
     },
     {
-        "name": "Monero",
-        "shortcut": "XMR",
+        "name": "Dinastycoin",
+        "shortcut": "DCY",
         "slip44": 128,
         "curve": "ed25519",
         "decimals": 12,
         "links": {
-            "Homepage": "https://getmonero.org",
-            "Github": "https://github.com/monero-project/monero"
+            "Homepage": "https://www.dinastyofreedom.org/",
+            "Github": "https://github.com/dinastyoffreedom/dinastycoin"
         },
         "wallet": {},
         "blockchain_link": {}

@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, The Monero Project
+// Copyright (c) 2015-2019, The Dinastycoin Project
 // 
 // All rights reserved.
 // 
@@ -31,8 +31,8 @@
 #include "version.h"
 #include "daemon/command_parser_executor.h"
 
-#undef MONERO_DEFAULT_LOG_CATEGORY
-#define MONERO_DEFAULT_LOG_CATEGORY "daemon"
+#undef DINASTYCOIN_DEFAULT_LOG_CATEGORY
+#define DINASTYCOIN_DEFAULT_LOG_CATEGORY "daemon"
 
 namespace daemonize {
 
@@ -758,7 +758,7 @@ bool t_command_parser_executor::pop_blocks(const std::vector<std::string>& args)
 
 bool t_command_parser_executor::version(const std::vector<std::string>& args)
 {
-  std::cout << "Monero '" << MONERO_RELEASE_NAME << "' (v" << MONERO_VERSION_FULL << ")" << std::endl;
+  std::cout << "Dinastycoin '" << DINASTYCOIN_RELEASE_NAME << "' (v" << DINASTYCOIN_VERSION_FULL << ")" << std::endl;
   return true;
 }
 

@@ -1,6 +1,6 @@
-# Monero
+# Dinastycoin
 
-Copyright (c) 2014-2019 The Monero Project.   
+Copyright (c) 2014-2019 The Dinastycoin Project.
 Portions Copyright (c) 2012-2013 The Cryptonote developers.
 
 ## Table of Contents
@@ -20,40 +20,39 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
   - [Contributing](#contributing)
   - [Scheduled software upgrades](#scheduled-software-upgrades)
   - [Release staging schedule and protocol](#release-staging-schedule-and-protocol)
-  - [Compiling Monero from source](#compiling-monero-from-source)
+  - [Compiling Dinastycoin from source](#compiling-dinastycoin-from-source)
     - [Dependencies](#dependencies)
 
 ## Development resources
 
-- Web: [getmonero.org](https://getmonero.org)
-- Forum: [forum.getmonero.org](https://forum.getmonero.org)
-- Mail: [dev@getmonero.org](mailto:dev@getmonero.org)
-- GitHub: [https://github.com/monero-project/monero](https://github.com/monero-project/monero)
-- IRC: [#monero-dev on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%23monero-dev&prompt=1&uio=d4)
+- Web: [dinastyofreedom.org](https://www.dinastyofreedom.org/)
+- Forum: [forum.dinastyofreedom.org](https://forum.dinastyofreedom.org)
+- Mail: [dev@dinastyofreedom.org](mailto:dev@dinastyofreedom.org)
+- GitHub: [https://github.com/dinastyoffreedom/dinastycoin](https://github.com/dinastyoffreedom/dinastycoin)
 
 ## Vulnerability response
 
-- Our [Vulnerability Response Process](https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md) encourages responsible disclosure
-- We are also available via [HackerOne](https://hackerone.com/monero)
+- Our [Vulnerability Response Process](https://github.com/dinastyoffreedom/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md) encourages responsible disclosure
+- We are also available via [HackerOne](https://hackerone.com/dinastycoin)
 
 ## Research
 
-The [Monero Research Lab](https://src.getmonero.org/resources/research-lab/) is an open forum where the community coordinates research into Monero cryptography, protocols, fungibility, analysis, and more. We welcome collaboration and contributions from outside researchers! Because not all Lab work and publications are distributed as traditional preprints or articles, they may be easy to miss if you are conducting literature reviews for your own Monero research. You are encouraged to get in touch with our researchers if you have questions, wish to collaborate, or would like guidance to help avoid unnecessarily duplicating earlier or known work.
+The [Dinastycoin Research Lab](https://src.dinastyofreedom.org/resources/research-lab/) is an open forum where the community coordinates research into Dinastycoin cryptography, protocols, fungibility, analysis, and more. We welcome collaboration and contributions from outside researchers! Because not all Lab work and publications are distributed as traditional preprints or articles, they may be easy to miss if you are conducting literature reviews for your own Dinastycoin research. You are encouraged to get in touch with our researchers if you have questions, wish to collaborate, or would like guidance to help avoid unnecessarily duplicating earlier or known work.
 
-Our researchers are available on IRC in [#monero-research-lab on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%23monero-research-lab&prompt=1&uio=d4) or by email:
+Our researchers are available on IRC in [#dinastycoin-research-lab on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%dinastycoin-research-lab&prompt=1&uio=d4) or by email:
 
-- Sarang Noether, Ph.D.: [sarang@getmonero.org](mailto:sarang@getmonero.org) or [sarang.noether@protonmail.com](mailto:sarang.noether@protonmail.com); [research repository](https://github.com/SarangNoether/research-lab)
-- Surae Noether (Brandon Goodell), Ph.D.: [surae@getmonero.org](mailto:surae@getmonero.org) or [surae.noether@protonmail.com](mailto:surae.noether@protonmail.com); [research repository](https://github.com/b-g-goodell/research-lab)
+- Sarang Noether, Ph.D.: [sarang@dinastyofreedom.org](mailto:sarang@dinastyofreedom.org) or [sarang.noether@protonmail.com](mailto:sarang.noether@protonmail.com); [research repository](https://github.com/SarangNoether/research-lab)
+- Surae Noether (Brandon Goodell), Ph.D.: [surae@dinastyofreedom.org](mailto:surae@dinastyofreedom.org) or [surae.noether@protonmail.com](mailto:surae.noether@protonmail.com); [research repository](https://github.com/b-g-goodell/research-lab)
 
 ## Announcements
 
-- You can subscribe to an [announcement listserv](https://lists.getmonero.org) to get critical announcements from the Monero core team. The announcement list can be very helpful for knowing when software updates are needed.
+- You can subscribe to an [announcement listserv](https://lists.dinastyofreedom.org) to get critical announcements from the Dinastycoin core team. The announcement list can be very helpful for knowing when software updates are needed.
 
 ## Translations
-The CLI wallet is available in different languages. If you want to help translate it, see our self-hosted localization platform, Pootle, on [translate.getmonero.org](https://translate.getmonero.org/projects/CLI/). Every translation *must* be uploaded on the platform, pull requests directly editing the code in this repository will be closed. If you need help with Pootle, you can find a guide with screenshots [here](https://github.com/monero-ecosystem/monero-translations/blob/master/pootle.md).
+The CLI wallet is available in different languages. If you want to help translate it, see our self-hosted localization platform, Pootle, on [translate.dinastyofreedom.org](https://translate.dinastyofreedom.org/projects/CLI/). Every translation *must* be uploaded on the platform, pull requests directly editing the code in this repository will be closed. If you need help with Pootle, you can find a guide with screenshots [here](https://github.com/dinastycoin-ecosystem/dinastycoin-translations/blob/master/pootle.md).
 &nbsp;
 
-If you need help/support/info about translations, contact the localization workgroup. You can find the complete list of contacts on the repository of the workgroup: [monero-translations](https://github.com/monero-ecosystem/monero-translations#contacts).
+If you need help/support/info about translations, contact the localization workgroup. You can find the complete list of contacts on the repository of the workgroup: [dinastycoin-translations](https://github.com/dinastycoin-ecosystem/dinastycoin-translations#contacts).
 
 ## Build
 
@@ -63,63 +62,63 @@ These builds are of the master branch, which is used for active development and 
 
 | Operating System      | Processor | Status |
 | --------------------- | -------- |--------|
-| Ubuntu 16.04          |  i686    | [![Ubuntu 16.04 i686](https://build.getmonero.org/png?builder=monero-static-ubuntu-i686)](https://build.getmonero.org/builders/monero-static-ubuntu-i686)
-| Ubuntu 16.04          |  amd64   | [![Ubuntu 16.04 amd64](https://build.getmonero.org/png?builder=monero-static-ubuntu-amd64)](https://build.getmonero.org/builders/monero-static-ubuntu-amd64)
-| Ubuntu 16.04          |  armv7   | [![Ubuntu 16.04 armv7](https://build.getmonero.org/png?builder=monero-static-ubuntu-arm7)](https://build.getmonero.org/builders/monero-static-ubuntu-arm7)
-| Debian Stable         |  armv8   | [![Debian armv8](https://build.getmonero.org/png?builder=monero-static-debian-armv8)](https://build.getmonero.org/builders/monero-static-debian-armv8)
-| macOS 10.11             |  amd64   | [![macOS 10.11 amd64](https://build.getmonero.org/png?builder=monero-static-osx-10.11)](https://build.getmonero.org/builders/monero-static-osx-10.11)
-| macOS 10.12             |  amd64   | [![macOS 10.12 amd64](https://build.getmonero.org/png?builder=monero-static-osx-10.12)](https://build.getmonero.org/builders/monero-static-osx-10.12)
-| macOS 10.13             |  amd64   | [![macOS 10.13 amd64](https://build.getmonero.org/png?builder=monero-static-osx-10.13)](https://build.getmonero.org/builders/monero-static-osx-10.13)
-| FreeBSD 11            |  amd64   | [![FreeBSD 11 amd64](https://build.getmonero.org/png?builder=monero-static-freebsd64)](https://build.getmonero.org/builders/monero-static-freebsd64)
-| DragonFly BSD 4.6     |  amd64   | [![DragonFly BSD amd64](https://build.getmonero.org/png?builder=monero-static-dragonflybsd-amd64)](https://build.getmonero.org/builders/monero-static-dragonflybsd-amd64)
-| Windows (MSYS2/MinGW) |  i686    | [![Windows (MSYS2/MinGW) i686](https://build.getmonero.org/png?builder=monero-static-win32)](https://build.getmonero.org/builders/monero-static-win32)
-| Windows (MSYS2/MinGW) |  amd64   | [![Windows (MSYS2/MinGW) amd64](https://build.getmonero.org/png?builder=monero-static-win64)](https://build.getmonero.org/builders/monero-static-win64)
+| Ubuntu 16.04          |  i686    | [![Ubuntu 16.04 i686](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-ubuntu-i686)](https://build.dinastyofreedom.org/builders/dinastycoin-static-ubuntu-i686)
+| Ubuntu 16.04          |  amd64   | [![Ubuntu 16.04 amd64](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-ubuntu-amd64)](https://build.dinastyofreedom.org/builders/dinastycoin-static-ubuntu-amd64)
+| Ubuntu 16.04          |  armv7   | [![Ubuntu 16.04 armv7](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-ubuntu-arm7)](https://build.dinastyofreedom.org/builders/dinastycoin-static-ubuntu-arm7)
+| Debian Stable         |  armv8   | [![Debian armv8](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-debian-armv8)](https://build.dinastyofreedom.org/builders/dinastycoin-static-debian-armv8)
+| macOS 10.11             |  amd64   | [![macOS 10.11 amd64](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-osx-10.11)](https://build.dinastyofreedom.org/builders/dinastycoin-static-osx-10.11)
+| macOS 10.12             |  amd64   | [![macOS 10.12 amd64](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-osx-10.12)](https://build.dinastyofreedom.org/builders/dinastycoin-static-osx-10.12)
+| macOS 10.13             |  amd64   | [![macOS 10.13 amd64](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-osx-10.13)](https://build.dinastyofreedom.org/builders/dinastycoin-static-osx-10.13)
+| FreeBSD 11            |  amd64   | [![FreeBSD 11 amd64](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-freebsd64)](https://build.dinastyofreedom.org/builders/dinastycoin-static-freebsd64)
+| DragonFly BSD 4.6     |  amd64   | [![DragonFly BSD amd64](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-dragonflybsd-amd64)](https://build.dinastyofreedom.org/builders/dinastycoin-static-dragonflybsd-amd64)
+| Windows (MSYS2/MinGW) |  i686    | [![Windows (MSYS2/MinGW) i686](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-win32)](https://build.dinastyofreedom.org/builders/dinastycoin-static-win32)
+| Windows (MSYS2/MinGW) |  amd64   | [![Windows (MSYS2/MinGW) amd64](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-win64)](https://build.dinastyofreedom.org/builders/dinastycoin-static-win64)
 
 ## Coverage
 
 | Type      | Status |
 |-----------|--------|
 | Coverity  | [![Coverity Status](https://scan.coverity.com/projects/9657/badge.svg)](https://scan.coverity.com/projects/9657/)
-| Coveralls | [![Coveralls Status](https://coveralls.io/repos/github/monero-project/monero/badge.svg?branch=master)](https://coveralls.io/github/monero-project/monero?branch=master)
+| Coveralls | [![Coveralls Status](https://coveralls.io/repos/github/dinastycoin-project/dinastycoin/badge.svg?branch=master)](https://coveralls.io/github/dinastycoin-project/dinastycoin?branch=master)
 | License   | [![License](https://img.shields.io/badge/license-BSD3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Introduction
 
-Monero is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
+Dinastycoin is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
 
-**Privacy:** Monero uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
+**Privacy:** Dinastycoin uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
 
 **Security:** Using the power of a distributed peer-to-peer consensus network, every transaction on the network is cryptographically secured. Individual wallets have a 25 word mnemonic seed that is only displayed once, and can be written down to backup the wallet. Wallet files are encrypted with a passphrase to ensure they are useless if stolen.
 
-**Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, Monero is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer.
+**Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, Dinastycoin is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer.
 
-**Decentralization:** The utility of monero depends on its decentralised peer-to-peer consensus network - anyone should be able to run the monero software, validate the integrity of the blockchain, and participate in all aspects of the monero network using consumer-grade commodity hardware. Decentralization of the monero network is maintained by software development that minimizes the costs of running the monero software and inhibits the proliferation of specialized, non-commodity hardware.  
+**Decentralization:** The utility of dinastycoin depends on its decentralised peer-to-peer consensus network - anyone should be able to run the dinastycoin software, validate the integrity of the blockchain, and participate in all aspects of the dinastycoin network using consumer-grade commodity hardware. Decentralization of the dinastycoin network is maintained by software development that minimizes the costs of running the dinastycoin software and inhibits the proliferation of specialized, non-commodity hardware.
 
 ## About this project
 
-This is the core implementation of Monero. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of Monero that uses the protocol and network in a compatible manner.
+This is the core implementation of Dinastycoin. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of Dinastycoin that uses the protocol and network in a compatible manner.
 
 As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
 
-**Anyone is welcome to contribute to Monero's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
+**Anyone is welcome to contribute to Dinastycoin's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
 
 ## Supporting the project
 
-Monero is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. Both Monero and Bitcoin donations can be made to **donate.getmonero.org** if using a client that supports the [OpenAlias](https://openalias.org) standard. Alternatively you can send XMR to the Monero donation address via the `donate` command (type `help` in the command-line wallet for details).
+Dinastycoin is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. Both Dinastycoin and Bitcoin donations can be made to **donate.dinastyofreedom.org** if using a client that supports the [OpenAlias](https://openalias.org) standard. Alternatively you can send DCY to the Dinastycoin donation address via the `donate` command (type `help` in the command-line wallet for details).
 
-The Monero donation address is: `44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A` (viewkey: `f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501`)
+The Dinastycoin donation address is: `44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A` (viewkey: `f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501`)
 
 The Bitcoin donation address is: `1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H`
 
 Core development funding and/or some supporting services are also graciously provided by sponsors:
 
-[<img width="80" src="https://static.getmonero.org/images/sponsors/mymonero.png"/>](https://mymonero.com)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/kitware.png?1"/>](https://kitware.com)
-[<img width="100" src="https://static.getmonero.org/images/sponsors/dome9.png"/>](https://dome9.com)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/araxis.png"/>](https://araxis.com)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/jetbrains.png"/>](https://www.jetbrains.com/)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/navicat.png"/>](https://www.navicat.com/)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/symas.png"/>](https://www.symas.com/)
+[<img width="80" src="https://static.dinastyofreedom.org/images/sponsors/mydinastycoin.png"/>](https://mydinastycoin.com)
+[<img width="150" src="https://static.dinastyofreedom.org/images/sponsors/kitware.png?1"/>](https://kitware.com)
+[<img width="100" src="https://static.dinastyofreedom.org/images/sponsors/dome9.png"/>](https://dome9.com)
+[<img width="150" src="https://static.dinastyofreedom.org/images/sponsors/araxis.png"/>](https://araxis.com)
+[<img width="150" src="https://static.dinastyofreedom.org/images/sponsors/jetbrains.png"/>](https://www.jetbrains.com/)
+[<img width="150" src="https://static.dinastyofreedom.org/images/sponsors/navicat.png"/>](https://www.navicat.com/)
+[<img width="150" src="https://static.dinastyofreedom.org/images/sponsors/symas.png"/>](https://www.symas.com/)
 
 There are also several mining pools that kindly donate a portion of their fees, [a list of them can be found on our Bitcointalk post](https://bitcointalk.org/index.php?topic=583449.0).
 
@@ -133,11 +132,11 @@ If you want to help out, see [CONTRIBUTING](CONTRIBUTING.md) for a set of guidel
 
 ## Scheduled software upgrades
 
-Monero uses a fixed-schedule software upgrade (hard fork) mechanism to implement new features. This means that users of Monero (end users and service providers) should run current versions and upgrade their software on a regular schedule. Software upgrades occur during the months of April and October. The required software for these upgrades will be available prior to the scheduled date. Please check the repository prior to this date for the proper Monero software version. Below is the historical schedule and the projected schedule for the next upgrade.
+Dinastycoin uses a fixed-schedule software upgrade (hard fork) mechanism to implement new features. This means that users of Dinastycoin (end users and service providers) should run current versions and upgrade their software on a regular schedule. Software upgrades occur during the months of April and October. The required software for these upgrades will be available prior to the scheduled date. Please check the repository prior to this date for the proper Dinastycoin software version. Below is the historical schedule and the projected schedule for the next upgrade.
 Dates are provided in the format YYYY-MM-DD.
 
 
-| Software upgrade block height  | Date       | Fork version      | Minimum Monero version | Recommended Monero version | Details                                                                            |  
+| Software upgrade block height  | Date       | Fork version      | Minimum Dinastycoin version | Recommended Dinastycoin version | Details                                                                            |
 | ------------------------------ | -----------| ----------------- | ---------------------- | -------------------------- | ---------------------------------------------------------------------------------- |
 | 1009827                        | 2016-03-22 | v2                | v0.9.4                 | v0.9.4                     | Allow only >= ringsize 3, blocktime = 120 seconds, fee-free blocksize 60 kb       |
 | 1141317                        | 2016-09-21 | v3                | v0.9.4                 | v0.10.0                    | Splits coinbase into denominations  |
@@ -157,7 +156,7 @@ X's indicate that these details have not been determined as of commit date.
 
 Approximately three months prior to a scheduled software upgrade, a branch from Master will be created with the new release version tag. Pull requests that address bugs should then be made to both Master and the new release branch. Pull requests that require extensive review and testing (generally, optimizations and new features) should *not* be made to the release branch.
 
-## Compiling Monero from source
+## Compiling Dinastycoin from source
 
 ### Dependencies
 
@@ -210,15 +209,15 @@ FreeBSD one liner for required to build dependencies
 
 Clone recursively to pull-in needed submodule(s):
 
-`$ git clone --recursive https://github.com/monero-project/monero`
+`$ git clone --recursive https://github.com/dinastyoffreedom/dinastycoin`
 
 If you already have a repo cloned, initialize and update:
 
-`$ cd monero && git submodule init && git submodule update`
+`$ cd dinastycoin && git submodule init && git submodule update`
 
 ### Build instructions
 
-Monero uses the CMake build system and a top-level [Makefile](Makefile) that
+Dinastycoin uses the CMake build system and a top-level [Makefile](Makefile) that
 invokes cmake commands as needed.
 
 #### On Linux and macOS
@@ -227,7 +226,7 @@ invokes cmake commands as needed.
 * Change to the root of the source code directory, change to the most recent release branch, and build:
 
     ```bash
-    cd monero
+    cd dinastycoin
     git checkout release-v0.14
     make
     ```
@@ -241,16 +240,16 @@ invokes cmake commands as needed.
     https://github.com/zeromq/cppzmq to `/usr/local/include` should fix that error.
 
     *Note*: The instructions above will compile the most stable release of the
-    Monero software. If you would like to use and test the most recent software,
+    Dinastycoin software. If you would like to use and test the most recent software,
     use ```git checkout master```. The master branch may contain updates that are
     both unstable and incompatible with release software, though testing is always
     encouraged.
 
 * The resulting executables can be found in `build/release/bin`
 
-* Add `PATH="$PATH:$HOME/monero/build/release/bin"` to `.profile`
+* Add `PATH="$PATH:$HOME/dinastycoin/build/release/bin"` to `.profile`
 
-* Run Monero with `dinastycoind --detach`
+* Run Dinastycoin with `dinastycoind --detach`
 
 * **Optional**: build and run the test suite to verify the binaries:
 
@@ -286,7 +285,7 @@ Tested on a Raspberry Pi Zero with a clean install of minimal Raspbian Stretch (
 
 * `apt-get update && apt-get upgrade` to install all of the latest software
 
-* Install the dependencies for Monero from the 'Debian' column in the table above.
+* Install the dependencies for Dinastycoin from the 'Debian' column in the table above.
 
 * Increase the system swap size:
 
@@ -299,11 +298,11 @@ Tested on a Raspberry Pi Zero with a clean install of minimal Raspbian Stretch (
 
 * If using an external hard disk without an external power supply, ensure it gets enough power to avoid hardware issues when syncing, by adding the line "max_usb_current=1" to /boot/config.txt
 
-* Clone monero and checkout the most recent release version:
+* Clone dinastycoin and checkout the most recent release version:
 
     ```bash
-    git clone https://github.com/monero-project/monero.git
-    cd monero
+    git clone https://github.com/dinastyoffreedom/dinastycoin.git
+    cd dinastycoin
     git checkout tags/v0.14.1.0
     ```
 
@@ -317,15 +316,15 @@ Tested on a Raspberry Pi Zero with a clean install of minimal Raspbian Stretch (
 
 * The resulting executables can be found in `build/release/bin`
 
-* Add `PATH="$PATH:$HOME/monero/build/release/bin"` to `.profile`
+* Add `PATH="$PATH:$HOME/dinastycoin/build/release/bin"` to `.profile`
 
-* Run Monero with `dinastycoind --detach`
+* Run Dinastycoin with `dinastycoind --detach`
 
 * You may wish to reduce the size of the swap file after the build has finished, and delete the boost directory from your home directory
 
 #### *Note for Raspbian Jessie users:*
 
-If you are using the older Raspbian Jessie image, compiling Monero is a bit more complicated. The version of Boost available in the Debian Jessie repositories is too old to use with Monero, and thus you must compile a newer version yourself. The following explains the extra steps, and has been tested on a Raspberry Pi 2 with a clean install of minimal Raspbian Jessie.
+If you are using the older Raspbian Jessie image, compiling Dinastycoin is a bit more complicated. The version of Boost available in the Debian Jessie repositories is too old to use with Dinastycoin, and thus you must compile a newer version yourself. The following explains the extra steps, and has been tested on a Raspberry Pi 2 with a clean install of minimal Raspbian Jessie.
 
 * As before, `apt-get update && apt-get upgrade` to install all of the latest software, and increase the system swap size
 
@@ -337,7 +336,7 @@ If you are using the older Raspbian Jessie image, compiling Monero is a bit more
     ```
 
 
-* Then, install the dependencies for Monero except `libunwind` and `libboost-all-dev`
+* Then, install the dependencies for Dinastycoin except `libunwind` and `libboost-all-dev`
 
 * Install the latest version of boost (this may first require invoking `apt-get remove --purge libboost*` to remove a previous version if you're not using a clean install):
 
@@ -358,7 +357,7 @@ If you are using the older Raspbian Jessie image, compiling Monero is a bit more
 
 * Wait ~4 hours
 
-* From here, follow the [general Raspberry Pi instructions](#on-the-raspberry-pi) from the "Clone monero and checkout most recent release version" step.
+* From here, follow the [general Raspberry Pi instructions](#on-the-raspberry-pi) from the "Clone dinastycoin and checkout most recent release version" step.
 
 #### On Windows:
 
@@ -410,7 +409,7 @@ application.
 * To git clone, run:
 
     ```bash
-    git clone --recursive https://github.com/monero-project/monero.git
+    git clone --recursive https://github.com/dinastyoffreedom/dinastycoin.git
     ```
 
 **Building**
@@ -418,10 +417,10 @@ application.
 * Change to the cloned directory, run:
 
     ```bash
-    cd monero
+    cd dinastycoin
     ```
 
-* If you would like a specific [version/tag](https://github.com/monero-project/monero/tags), do a git checkout for that version. eg. 'v0.14.1.0'. If you don't care about the version and just want binaries from master, skip this step:
+* If you would like a specific [version/tag](https://github.com/dinastyoffreedom/dinastycoin/tags), do a git checkout for that version. eg. 'v0.14.1.0'. If you don't care about the version and just want binaries from master, skip this step:
 	
     ```bash
     git checkout v0.14.1.0
@@ -457,9 +456,9 @@ application.
 
 ### On FreeBSD:
 
-The project can be built from scratch by following instructions for Linux above(but use `gmake` instead of `make`). If you are running monero in a jail you need to add the flag: `allow.sysvipc=1` to your jail configuration, otherwise lmdb will throw the error message: `Failed to open lmdb environment: Function not implemented`.
+The project can be built from scratch by following instructions for Linux above(but use `gmake` instead of `make`). If you are running dinastycoin in a jail you need to add the flag: `allow.sysvipc=1` to your jail configuration, otherwise lmdb will throw the error message: `Failed to open lmdb environment: Function not implemented`.
 
-We expect to add Monero into the ports tree in the near future, which will aid in managing installations using ports or packages.
+We expect to add Dinastycoin into the ports tree in the near future, which will aid in managing installations using ports or packages.
 
 ### On OpenBSD:
 
@@ -474,7 +473,7 @@ The doxygen and graphviz packages are optional and require the xbase set.
 The Boost package has a bug that will prevent librpc.a from building correctly. In order to fix this, you will have to Build boost yourself from scratch. Follow the directions here (under "Building Boost"):
 https://github.com/bitcoin/bitcoin/blob/master/doc/build-openbsd.md
 
-You will have to add the serialization, date_time, and regex modules to Boost when building as they are needed by Monero.
+You will have to add the serialization, date_time, and regex modules to Boost when building as they are needed by Dinastycoin.
 
 To build: `env CC=egcc CXX=eg++ CPP=ecpp DEVELOPER_LOCAL_TOOLS=1 BOOST_ROOT=/path/to/the/boost/you/built make release-static-64`
 
@@ -547,7 +546,7 @@ cmake ..
 doas make install
 ```
 
-Build monero:
+Build dinastycoin:
 ```bash
 env DEVELOPER_LOCAL_TOOLS=1 BOOST_ROOT=/usr/local make release-static
 ```
@@ -558,9 +557,9 @@ You will need to add a few packages to your system. `pkg_add cmake gmake zeromq 
 
 The doxygen and graphviz packages are optional and require the xbase set.
 
-Build monero: `env DEVELOPER_LOCAL_TOOLS=1 BOOST_ROOT=/usr/local gmake release-static`
+Build dinastycoin: `env DEVELOPER_LOCAL_TOOLS=1 BOOST_ROOT=/usr/local gmake release-static`
 
-Note: you may encounter the following error, when compiling the latest version of monero as a normal user:
+Note: you may encounter the following error, when compiling the latest version of dinastycoin as a normal user:
 
 ```
 LLVM ERROR: out of memory
@@ -586,13 +585,13 @@ Then you can run make as usual.
 
 ```bash
 # Build image (for ARM 32-bit)
-docker build -f utils/build_scripts/android32.Dockerfile -t monero-android .
+docker build -f utils/build_scripts/android32.Dockerfile -t dinastycoin-android .
 # Build image (for ARM 64-bit)
-docker build -f utils/build_scripts/android64.Dockerfile -t monero-android .
+docker build -f utils/build_scripts/android64.Dockerfile -t dinastycoin-android .
 # Create container
-docker create -it --name monero-android monero-android bash
+docker create -it --name dinastycoin-android dinastycoin-android bash
 # Get binaries
-docker cp monero-android:/src/build/release/bin .
+docker cp dinastycoin-android:/src/build/release/bin .
 ```
 
 ### Building portable statically linked binaries
@@ -627,11 +626,11 @@ You can also cross-compile static binaries on Linux for Windows and macOS with t
 
 The required packages are the names for each toolchain on apt. Depending on your distro, they may have different names.
 
-Using `depends` might also be easier to compile Monero on Windows than using MSYS. Activate Windows Subsystem for Linux (WSL) with a distro (for example Ubuntu), install the apt build-essentials and follow the `depends` steps as depicted above.
+Using `depends` might also be easier to compile Dinastycoin on Windows than using MSYS. Activate Windows Subsystem for Linux (WSL) with a distro (for example Ubuntu), install the apt build-essentials and follow the `depends` steps as depicted above.
 
 The produced binaries still link libc dynamically. If the binary is compiled on a current distribution, it might not run on an older distribution with an older installation of libc. Passing `-DBACKCOMPAT=ON` to cmake will make sure that the binary will run on systems having at least libc version 2.17.
 
-## Installing Monero from a package
+## Installing Dinastycoin from a package
 
 **DISCLAIMER: These packages are not part of this repository or maintained by this project's contributors, and as such, do not go through the same review process to ensure their trustworthiness and security.**
 
@@ -640,41 +639,41 @@ Packages are available for
 * Ubuntu and [snap supported](https://snapcraft.io/docs/core/install) systems, via a community contributed build.
 
     ```bash
-    snap install monero --beta
+    snap install dinastycoin --beta
     ```
 
 Installing a snap is very quick. Snaps are secure. They are isolated with all of their dependencies. Snaps also auto update when a new version is released.
 
 * Arch Linux (via [AUR](https://aur.archlinux.org/)):
-  - Stable release: [`monero`](https://aur.archlinux.org/packages/monero)
-  - Bleeding edge: [`monero-git`](https://aur.archlinux.org/packages/monero-git)
+  - Stable release: [`dinastycoin`](https://aur.archlinux.org/packages/dinastycoin)
+  - Bleeding edge: [`dinastycoin-git`](https://aur.archlinux.org/packages/dinastycoin-git)
 
 * Void Linux:
 
     ```bash
-    xbps-install -S monero
+    xbps-install -S dinastycoin
     ```
 
 * GuixSD
 
     ```bash
-    guix package -i monero
+    guix package -i dinastycoin
     ```
 
 * Docker
 
     ```bash
     # Build using all available cores
-    docker build -t monero .
+    docker build -t dinastycoin .
     
     # or build using a specific number of cores (reduce RAM requirement)
-    docker build --build-arg NPROC=1 -t monero .
+    docker build --build-arg NPROC=1 -t dinastycoin .
     
     # either run in foreground
-    docker run -it -v /monero/chain:/root/.bitmonero -v /monero/wallet:/wallet -p 18080:18080 monero
+    docker run -it -v /dinastycoin/chain:/root/.dinastycoin -v /dinastycoin/wallet:/wallet -p 18080:18080 dinastycoin
     
     # or in background
-    docker run -it -d -v /monero/chain:/root/.bitmonero -v /monero/wallet:/wallet -p 18080:18080 monero
+    docker run -it -d -v /dinastycoin/chain:/root/.dinastycoin -v /dinastycoin/wallet:/wallet -p 18080:18080 dinastycoin
     ```
 
 * The build needs 3 GB space.
@@ -707,7 +706,7 @@ To run in background:
 To run as a systemd service, copy
 [dinastycoind.service](utils/systemd/dinastycoind.service) to `/etc/systemd/system/` and
 [dinastyd.conf](utils/conf/dinastyd.conf) to `/etc/`. The [example
-service](utils/systemd/dinastycoind.service) assumes that the user `monero` exists
+service](utils/systemd/dinastycoind.service) assumes that the user `dinastycoin` exists
 and its home is the data directory specified in the [example
 config](utils/conf/dinastyd.conf).
 
@@ -726,7 +725,7 @@ See [README.i18n.md](README.i18n.md).
 > used solely for relaying transactions received over local RPC. This provides
 > privacy and better protection against surrounding node (sybil) attacks.
 
-While Monero isn't made to integrate with Tor, it can be used wrapped with torsocks, by
+While Dinastycoin isn't made to integrate with Tor, it can be used wrapped with torsocks, by
 setting the following configuration parameters and environment variables:
 
 * `--p2p-bind-ip 127.0.0.1` on the command line or `p2p-bind-ip=127.0.0.1` in
@@ -768,7 +767,7 @@ DNS_PUBLIC=tcp torsocks ./dinastycoind --p2p-bind-ip 127.0.0.1 --no-igd --rpc-bi
 
 ## Debugging
 
-This section contains general instructions for debugging failed installs or problems encountered with Monero. First, ensure you are running the latest version built from the Github repo.
+This section contains general instructions for debugging failed installs or problems encountered with Dinastycoin. First, ensure you are running the latest version built from the Github repo.
 
 ### Obtaining stack traces and core dumps on Unix systems
 
@@ -804,7 +803,7 @@ gdb /path/to/dinastycoind /path/to/dumpfile`
 
 Print the stack trace with `bt`
 
-#### To run monero within gdb:
+#### To run dinastycoin within gdb:
 
 Type `gdb /path/to/dinastycoind`
 
@@ -818,13 +817,13 @@ There are two tools available:
 
 #### ASAN
 
-Configure Monero with the -D SANITIZE=ON cmake flag, eg:
+Configure Dinastycoin with the -D SANITIZE=ON cmake flag, eg:
 
 ```bash
 cd build/debug && cmake -D SANITIZE=ON -D CMAKE_BUILD_TYPE=Debug ../..
 ```
 
-You can then run the monero tools normally. Performance will typically halve.
+You can then run the dinastycoin tools normally. Performance will typically halve.
 
 #### valgrind
 
@@ -837,7 +836,7 @@ Instructions for debugging suspected blockchain corruption as per @HYC
 There is an `mdb_stat` command in the LMDB source that can print statistics about the database but it's not routinely built. This can be built with the following command:
 
 ```bash
-cd ~/monero/external/db_drivers/liblmdb && make
+cd ~/dinastycoin/external/db_drivers/liblmdb && make
 ```
 
 The output of `mdb_stat -ea <path to blockchain dir>` will indicate inconsistencies in the blocks, block_heights and block_info table.

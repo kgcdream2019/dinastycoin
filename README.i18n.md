@@ -1,9 +1,9 @@
-Monero daemon internationalization
+Dinastycoin daemon internationalization
 ==================================
 
-The Monero command line tools can be translated in various languages. If you wish to contribute and need help/support, contact the [Monero Localization Workgroup on Taiga](https://taiga.getmonero.org/project/erciccione-monero-localization/) or come chat on `#monero-translations` (Freenode/IRC, riot/matrix, MatterMost)
+The Dinastycoin command line tools can be translated in various languages. If you wish to contribute and need help/support, contact the [Dinastycoin Localization Workgroup on Taiga](https://www.dinastyofreedom.org//project/erciccione-dinastycoin-localization/) or come chat on `#dinastycoin-translations` (Freenode/IRC, riot/matrix, MatterMost)
 
-In order to use the same translation workflow as the [Monero Core GUI](https://github.com/monero-project/monero-gui), they use Qt Linguist translation files.  However, to avoid the dependencies on Qt this normally implies, they use a custom loader to read those files at runtime.
+In order to use the same translation workflow as the [Dinastycoin Core GUI](https://github.com/dinastyoffreedom/dinastycoin-gui), they use Qt Linguist translation files.  However, to avoid the dependencies on Qt this normally implies, they use a custom loader to read those files at runtime.
 
 ### Tools for translators
 
@@ -22,13 +22,13 @@ To update ts files after changing source code:
 To add a new language, eg Spanish (ISO code es):
 
 ```bash
-cp translations/monero.ts translations/monero_es.ts
+cp translations/dinastycoin.ts translations/dinastycoin_es.ts
 ```
 
 To edit translations for Spanish:
 
 ```bash
-linguist translations/monero_es.ts
+linguist translations/dinastycoin_es.ts
 ```
 
 To build translations after modifying them:

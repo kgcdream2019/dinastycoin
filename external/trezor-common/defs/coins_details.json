@@ -28169,14 +28169,14 @@
                 }
             ]
         },
-        "misc:XMR": {
+        "misc:DCY": {
             "links": {
-                "Github": "https://github.com/monero-project/monero",
-                "Homepage": "https://getmonero.org"
+                "Github": "https://github.com/dinastyoffreedom/dinastycoin",
+                "Homepage": "https://www.dinastyofreedom.org/"
             },
             "marketcap_usd": 732073046,
-            "name": "Monero",
-            "shortcut": "XMR",
+            "name": "Dinastycoin",
+            "shortcut": "DCY",
             "t1_enabled": "no",
             "t2_enabled": "yes",
             "type": "coin",

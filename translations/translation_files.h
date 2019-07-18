@@ -3,12 +3,12 @@
 
 #include <string>
 
-static const std::string translation_file_name_1 = "monero.qm";
+static const std::string translation_file_name_1 = "dinastycoin.qm";
 static const std::string translation_file_data_1 = std::string(
   "\x3c\xb8\x64\x18\xca\xef\x9c\x95\xcd\x21\x1c\xbf\x60\xa1\xbd\xdd",
   16);
 
-static const std::string translation_file_name_2 = "monero_fr.qm";
+static const std::string translation_file_name_2 = "dinastycoin_fr.qm";
 static const std::string translation_file_data_2 = std::string(
   "\x3c\xb8\x64\x18\xca\xef\x9c\x95\xcd\x21\x1c\xbf\x60\xa1\xbd\xdd"
   "\x42\x00\x00\x18\xc0\x00\x00\x00\x20\x00\x00\x4e\xca\x00\x00\x00"
@@ -10033,7 +10033,7 @@ static const std::string translation_file_data_2 = std::string(
   "\x01",
   160321);
 
-static const std::string translation_file_name_3 = "monero_it.qm";
+static const std::string translation_file_name_3 = "dinastycoin_it.qm";
 static const std::string translation_file_data_3 = std::string(
   "\x3c\xb8\x64\x18\xca\xef\x9c\x95\xcd\x21\x1c\xbf\x60\xa1\xbd\xdd"
   "\x42\x00\x00\x18\x58\x00\x00\x00\x20\x00\x00\x4d\x1a\x00\x00\x00"
@@ -19582,7 +19582,7 @@ static const std::string translation_file_data_3 = std::string(
   "\x72\x67\x73\x01\x88\x00\x00\x00\x02\x01\x01",
   152715);
 
-static const std::string translation_file_name_4 = "monero_ja.qm";
+static const std::string translation_file_name_4 = "dinastycoin_ja.qm";
 static const std::string translation_file_data_4 = std::string(
   "\x3c\xb8\x64\x18\xca\xef\x9c\x95\xcd\x21\x1c\xbf\x60\xa1\xbd\xdd"
   "\x42\x00\x00\x09\xe8\x00\x00\x00\x20\x00\x00\x27\x19\x00\x00\x00"
@@ -21863,7 +21863,7 @@ static const std::string translation_file_data_4 = std::string(
   "\x00\x00\x00\x0b\x77\x61\x6c\x6c\x65\x74\x5f\x61\x72\x67\x73\x01",
   36432);
 
-static const std::string translation_file_name_5 = "monero_sv.qm";
+static const std::string translation_file_name_5 = "dinastycoin_sv.qm";
 static const std::string translation_file_data_5 = std::string(
   "\x3c\xb8\x64\x18\xca\xef\x9c\x95\xcd\x21\x1c\xbf\x60\xa1\xbd\xdd"
   "\x42\x00\x00\x13\x20\x00\x00\x00\x20\x00\x00\x39\xeb\x00\x00\x00"

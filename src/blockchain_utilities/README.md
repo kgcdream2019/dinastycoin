@@ -1,6 +1,6 @@
-# Monero Blockchain Utilities
+# Dinastycoin Blockchain Utilities
 
-Copyright (c) 2014-2019, The Monero Project
+Copyright (c) 2015-2019, The Dinastycoin Project
 
 ## Introduction
 
@@ -14,13 +14,13 @@ See also each utility's "--help" option.
 
 `$ dinasty-blockchain-export`
 
-This loads the existing blockchain and exports it to `$MONERO_DATA_DIR/export/blockchain.raw`
+This loads the existing blockchain and exports it to `$DINASTYCOIN_DATA_DIR/export/blockchain.raw`
 
 ### Import the exported file
 
 `$ dinasty-blockchain-import`
 
-This imports blocks from `$MONERO_DATA_DIR/export/blockchain.raw` (exported using the
+This imports blocks from `$DINASTYCOIN_DATA_DIR/export/blockchain.raw` (exported using the
 `dinasty-blockchain-export` tool as described above) into the current database.
 
 Defaults: `--batch on`, `--batch size 20000`, `--verify on`
