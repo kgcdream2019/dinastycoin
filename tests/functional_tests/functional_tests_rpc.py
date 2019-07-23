@@ -37,8 +37,8 @@ except:
 N_DINASTYCOINDS = 1
 N_WALLETS = 4
 
-dinastycoind_base = [builddir + "/bin/dinastyd", "--regtest", "--fixed-difficulty", "1", "--offline", "--no-igd", "--p2p-bind-port", "dinastycoind_p2p_port", "--rpc-bind-port", "dinastycoind_rpc_port", "--zmq-rpc-bind-port", "dinastycoind_zmq_port", "--non-interactive", "--disable-dns-checkpoints", "--check-updates", "disabled", "--rpc-ssl", "disabled", "--log-level", "1"]
-wallet_base = [builddir + "/bin/dinasty-wallet-rpc", "--wallet-dir", builddir + "/functional-tests-directory", "--rpc-bind-port", "wallet_port", "--disable-rpc-login", "--rpc-ssl", "disabled", "--daemon-ssl", "disabled", "--daemon-port", "18180", "--log-level", "1"]
+dinastycoind_base = [builddir + "/bin/dinastyd", "--regtest", "--fixed-difficulty", "1", "--offline", "--no-igd", "--p2p-bind-port", "dinastycoind_p2p_port", "--rpc-bind-port", "dinastycoind_rpc_port", "--zmq-rpc-bind-port", "dinastycoind_zmq_port", "--non-interactive", "--disable-dns-checkpoints", "--check-updates", "disabled", "--rpc-ssl", "disabled", "--log-level", "4"]
+wallet_base = [builddir + "/bin/dinasty-wallet-rpc", "--wallet-dir", builddir + "/functional-tests-directory", "--rpc-bind-port", "wallet_port", "--disable-rpc-login", "--rpc-ssl", "disabled", "--daemon-ssl", "disabled", "--daemon-port", "37175", "--log-level", "4"]
 
 command_lines = []
 processes = []
@@ -46,9 +46,9 @@ outputs = []
 ports = []
 
 for i in range(N_DINASTYCOINDS):
-  command_lines.append([str(18180+i) if x == "dinastycoind_rpc_port" else str(18280+i) if x == "dinastycoind_p2p_port" else str(18380+i) if x == "dinastycoind_zmq_port" else x for x in dinastycoind_base])
+  command_lines.append([str(37175+i) if x == "dinastycoind_rpc_port" else str(18280+i) if x == "dinastycoind_p2p_port" else str(18380+i) if x == "dinastycoind_zmq_port" else x for x in dinastycoind_base])
   outputs.append(open(builddir + '/tests/functional_tests/dinastycoind' + str(i) + '.log', 'a+'))
-  ports.append(18180+i)
+  ports.append(37175+i)
 
 for i in range(N_WALLETS):
   command_lines.append([str(18090+i) if x == "wallet_port" else x for x in wallet_base])
