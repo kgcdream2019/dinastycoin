@@ -268,6 +268,9 @@ void BlockchainBDB::add_block(const block& blk, size_t block_weight, const diffi
         throw0(DB_ERROR("Failed to add block cumulative difficulty to db transaction."));
 
     Dbt_copy<uint64_t> coinsgen(coins_generated);
+	//this is newly added code for debug
+	MGINFO_YELLOW("-------------add_block : coin_generated    " << coins_generated << ENDL);
+	//end
     if (m_block_coins->put(DB_DEFAULT_TX, &key, &coinsgen, 0))
         throw0(DB_ERROR("Failed to add block total generated coins to db transaction."));
 
