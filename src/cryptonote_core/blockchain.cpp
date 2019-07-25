@@ -129,7 +129,7 @@ static const struct {
   uint8_t threshold;
   time_t time;
 } testnet_hard_forks[] = {
-  // version 1 from the start of the blockchain
+ // version 1 from the start of the blockchain
   { 1, 1, 0, 1341378000 },
 
   // version 2 starts from block 20, which is on or around the 20th of March, 2016. Fork time finalised on 2015-09-20. No fork voting occurs for the v2 fork.

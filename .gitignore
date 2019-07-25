@@ -104,3 +104,9 @@ local.properties
 .idea/
 .vscode/
 /testnet
+.vs/test_dinastycoin/v14/.suo
+test_dinastycoin.sln
+test_dinastycoin.VC.db
+test_dinastycoin.vcxproj
+test_dinastycoin.vcxproj.filters
+test_dinastycoin.VC.VC.opendb

@@ -44,7 +44,7 @@
 #include <assert.h>
 #include <stdlib.h>
 // https://stackoverflow.com/questions/1113409/attribute-constructor-equivalent-in-vc
-// https://msdn.microsoft.com/en-us/library/bb918180.aspx
+// https://msdn.microsoft.com/en-us/library/bb937175.aspx
 #pragma section(".CRT$XCT", read)
 #define INITIALIZER(name) \
   static void __cdecl name(void); \

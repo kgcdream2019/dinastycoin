@@ -90,6 +90,9 @@ namespace cryptonote {
     const uint64_t premine = 9200000000000000000U; 
     if (median_weight > 0 && already_generated_coins < premine) {
       reward = premine;
+      //this is newly added code for debug
+      MGINFO_YELLOW("--------------premine reward    " << reward << "    already_generated_coins   " << already_generated_coins << ENDL);
+      //end
       return true;
     }
     //****************************************************************************************
