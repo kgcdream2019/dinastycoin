@@ -338,6 +338,9 @@ namespace cryptonote
       const bool stagenet = command_line::get_arg(vm, arg_stagenet_on);
       m_nettype = testnet ? TESTNET : stagenet ? STAGENET : MAINNET;
     }
+      //this is newly added code for debug
+      MGINFO_YELLOW("-set nettype =" << m_nettype << ENDL);
+      //end
 
     m_config_folder = command_line::get_arg(vm, arg_data_dir);
 
@@ -446,6 +449,9 @@ namespace cryptonote
     {
       m_nettype = FAKECHAIN;
     }
+    //this is newly added code for debug
+    MGINFO_YELLOW("-set nettype =" << m_nettype << ENDL);
+    //end
     bool r = handle_command_line(vm);
 
     std::string db_type = command_line::get_arg(vm, cryptonote::arg_db_type);

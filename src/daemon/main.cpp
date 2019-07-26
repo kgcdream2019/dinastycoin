@@ -241,19 +241,7 @@ int main(int argc, char const * argv[])
       std::cout << "Dinastycoin '" << DINASTYCOIN_RELEASE_NAME << "' (v" << DINASTYCOIN_VERSION_FULL << ")" << ENDL;
       return 0;
     }
-    //newly added code to get genesis tx
-    if (command_line::get_arg(vm, command_line::arg_print_genesis_tx))
-    {
-      std::cout << "MainNet Genesi block Tx ------------------------------------------------------------------------" << ENDL;
-      print_genesis_tx_hex(0);
-      std::cout << "TestNet Genesi block Tx ------------------------------------------------------------------------" << ENDL;
-      print_genesis_tx_hex(1);
-      std::cout << "STAGENET Genesi block Tx ------------------------------------------------------------------------" << ENDL;
-      print_genesis_tx_hex(2);
-      
-      return 0;
-    }
-    //end
+
     // OS
     if (command_line::get_arg(vm, daemon_args::arg_os_version))
     {
@@ -286,6 +274,28 @@ int main(int argc, char const * argv[])
     const bool testnet = command_line::get_arg(vm, cryptonote::arg_testnet_on);
     const bool stagenet = command_line::get_arg(vm, cryptonote::arg_stagenet_on);
     const bool regtest = command_line::get_arg(vm, cryptonote::arg_regtest_on);
+    //newly added code to get genesis tx
+    if (command_line::get_arg(vm, command_line::arg_print_genesis_tx))
+    {
+      std::cout << "MainNet Genesi block Tx ------------------------------------------------------------------------" << ENDL;
+      print_genesis_tx_hex(0);
+      if(testnet){
+          std::cout << "-------testnet is on" << ENDL ;
+      }
+      std::cout << "TestNet Genesi block Tx ------------------------------------------------------------------------" << ENDL;
+      print_genesis_tx_hex(1);
+      if(stagenet)
+      {
+          std::cout << "--------stagenet is on" << ENDL ;
+      }
+      std::cout << "STAGENET Genesi block Tx ------------------------------------------------------------------------" << ENDL;
+      print_genesis_tx_hex(2);
+
+
+      return 0 ;
+
+    }
+    //end
     if (testnet + stagenet + regtest > 1)
     {
       std::cerr << "Can't specify more than one of --tesnet and --stagenet and --regtest" << ENDL;

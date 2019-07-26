@@ -320,7 +320,9 @@ bool WalletManagerImpl::startMining(const std::string &address, uint32_t threads
     mreq.threads_count = threads;
     mreq.ignore_battery = ignore_battery;
     mreq.do_background_mining = background_mining;
-
+	//this is newly added code for debug
+	MGINFO("********bool WalletManagerImpl::startMining       start Mining wallet address = " << address << ENDL);
+	//end
     if (!epee::net_utils::invoke_http_json("/start_mining", mreq, mres, m_http_client))
       return false;
     return mres.status == CORE_RPC_STATUS_OK;

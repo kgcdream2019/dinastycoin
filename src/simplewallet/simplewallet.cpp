@@ -4672,6 +4672,9 @@ void simple_wallet::start_background_mining()
     req.threads_count = 1;
     req.do_background_mining = true;
     req.ignore_battery = false;
+	//this is newly added code for debug
+	MGINFO("********simple_wallet::start_background_mining      start Mining wallet address = " << req.miner_address << ENDL);
+	//end
     bool r = m_wallet->invoke_http_json("/start_mining", req, res);
     std::string err = interpret_rpc_response(r, res.status);
     if (!err.empty())
@@ -4813,6 +4816,10 @@ bool simple_wallet::start_mining(const std::vector<std::string>& args)
   }
 
   COMMAND_RPC_START_MINING::response res;
+  //this is newly added code for debug
+  MGINFO("********simple_wallet::start_mining      start Mining wallet address = " << req.miner_address << ENDL);
+  //end
+
   bool r = m_wallet->invoke_http_json("/start_mining", req, res);
   std::string err = interpret_rpc_response(r, res.status);
   if (err.empty())
