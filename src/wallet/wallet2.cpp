@@ -2399,6 +2399,9 @@ void wallet2::process_new_blockchain_entry(const cryptonote::block& b, const cry
       LOG_PRINT_L2( "Skipped block by timestamp, height: " << height << ", block time " << b.timestamp << ", account time " << m_account.get_createtime());
   }
   m_blockchain.push_back(bl_id);
+  //this is newly added code for debug
+  MGINFO_YELLOW("wallet2::process_new_blockchain_entry is called addind new block bl_id = " << bl_id << ENDL);
+  //end
 
   if (0 != m_callback)
     m_callback->on_new_block(height, b);
@@ -2488,7 +2491,26 @@ void wallet2::process_parsed_blocks(uint64_t start_height, const std::vector<cry
 {
   size_t current_index = start_height;
   blocks_added = 0;
+  //this is newly added code by kgc
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  //Force processing of genesis transaction
+  if ((m_blockchain.size() == 1) && (start_height == 0)) {
+    cryptonote::block genesis;
+    generate_genesis(genesis);
 
+    if (m_blockchain[0] == get_block_hash(genesis)) {
+      //this is newly added code for debug
+      MGINFO_YELLOW("-------force processing of genesis transaction ..." << ENDL);
+      //end
+      LOG_PRINT_L2("Processing genesis transaction: " << string_tools::pod_to_hex(get_transaction_hash(genesis.miner_tx)));
+      std::vector<uint64_t> o_indices_genesis = {0}; //genesis transaction output
+      process_new_transaction(get_transaction_hash(genesis.miner_tx), genesis.miner_tx, o_indices_genesis, 0, genesis.timestamp, true, false, false,{});
+    } else {
+      LOG_ERROR("Skip processing of genesis transaction, genesis block hash does not match: " << string_tools::pod_to_hex(get_block_hash(genesis)));
+    }
+  }
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  //end
   THROW_WALLET_EXCEPTION_IF(blocks.size() != parsed_blocks.size(), error::wallet_internal_error, "size mismatch");
   THROW_WALLET_EXCEPTION_IF(!m_blockchain.is_in_bounds(current_index), error::out_of_hashchain_bounds_error);
 
@@ -2958,6 +2980,9 @@ void wallet2::update_pool_state(bool refreshed)
 //----------------------------------------------------------------------------------------------------
 void wallet2::fast_refresh(uint64_t stop_height, uint64_t &blocks_start_height, std::list<crypto::hash> &short_chain_history, bool force)
 {
+  //this is newly added code fir debug
+  MGINFO_YELLOW("wallet2::fast_refresh is called " << "stop_height = " << stop_height << "\t block_start_height = " << blocks_start_height << ENDL);
+  //end
   std::vector<crypto::hash> hashes;
 
   const uint64_t checkpoint_height = m_checkpoints.get_max_height();
@@ -3059,6 +3084,10 @@ std::shared_ptr<std::map<std::pair<uint64_t, uint64_t>, size_t>> wallet2::create
 //----------------------------------------------------------------------------------------------------
 void wallet2::refresh(bool trusted_daemon, uint64_t start_height, uint64_t & blocks_fetched, bool& received_money, bool check_pool)
 {
+  //this is newly added code for debug
+  MGINFO_YELLOW("allet2::refresh is called trusted_daemon = " << trusted_daemon << "\t start_height = " << start_height 
+        << "\t block_fetched " << blocks_fetched <<"\t received_money = " << received_money << "\t check_pool = " << check_pool <<ENDL);
+  //end
   if (m_offline)
   {
     blocks_fetched = 0;
@@ -3481,6 +3510,9 @@ void wallet2::clear_soft(bool keep_key_images)
   generate_genesis(b);
   m_blockchain.push_back(get_block_hash(b));
   m_last_block_reward = cryptonote::get_outs_money_amount(b.miner_tx);
+  //this is newly added code for debug
+  MGINFO_YELLOW("wallet2::clear_soft is called" << " blockchain is cleared. genesis block added hash =  " << get_block_hash(b) << ENDL);
+  //end
 }
 
 /*!
@@ -5415,6 +5447,9 @@ void wallet2::trim_hashchain()
 }
 //----------------------------------------------------------------------------------------------------
 void wallet2::check_genesis(const crypto::hash& genesis_hash) const {
+  //this is newly added code for debug
+    MGINFO_YELLOW("check_genesis is called genesis hash =" << genesis_hash << "  blockchain genesis = " << m_blockchain.genesis() << ENDL);
+  //end
   std::string what("Genesis block mismatch. You probably use wallet without testnet (or stagenet) flag with blockchain from test (or stage) network or vice versa");
 
   THROW_WALLET_EXCEPTION_IF(genesis_hash != m_blockchain.genesis(), error::wallet_internal_error, what);
@@ -12063,6 +12098,9 @@ std::tuple<size_t,crypto::hash,std::vector<crypto::hash>> wallet2::export_blockc
 
 void wallet2::import_blockchain(const std::tuple<size_t, crypto::hash, std::vector<crypto::hash>> &bc)
 {
+  //this is newly added code for debug
+  MGINFO_YELLOW("wallet2::importblockchain is called  , now blockchain is cleared." << ENDL);
+  //end
   m_blockchain.clear();
   if (std::get<0>(bc))
   {
