@@ -2471,6 +2471,9 @@ void wallet2::pull_blocks(uint64_t start_height, uint64_t &blocks_start_height, 
 //----------------------------------------------------------------------------------------------------
 void wallet2::pull_hashes(uint64_t start_height, uint64_t &blocks_start_height, const std::list<crypto::hash> &short_chain_history, std::vector<crypto::hash> &hashes)
 {
+  //this is newly added code for debug
+  MDEBUG("wallet2::pull_hashes start start_height = "  << start_height << "\t blocks_start_height = " << blocks_start_height << ENDL);
+  //end
   cryptonote::COMMAND_RPC_GET_HASHES_FAST::request req = AUTO_VAL_INIT(req);
   cryptonote::COMMAND_RPC_GET_HASHES_FAST::response res = AUTO_VAL_INIT(res);
   req.block_ids = short_chain_history;

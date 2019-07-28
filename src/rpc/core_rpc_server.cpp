@@ -398,9 +398,14 @@ namespace cryptonote
   {
     PERF_TIMER(on_get_hashes);
     bool r;
+    //this is newly added code for debug
+    LOG_PRINT_L0("init step of on_get_hashes");
+    //end
     if (use_bootstrap_daemon_if_necessary<COMMAND_RPC_GET_HASHES_FAST>(invoke_http_mode::BIN, "/gethashes.bin", req, res, r))
       return r;
-
+    //this is newly added code for debug
+    LOG_PRINT_L0("on_get_hash res.start_height = " << res.start_height << " req.start_height = " << req.start_height << ENDL) ;
+    //end
     res.start_height = req.start_height;
     if(!m_core.get_blockchain_storage().find_blockchain_supplement(req.block_ids, res.m_block_ids, res.start_height, res.current_height, false))
     {
