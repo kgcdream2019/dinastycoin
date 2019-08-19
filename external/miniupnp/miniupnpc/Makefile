@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kgc/dinastycoin
+CMAKE_SOURCE_DIR = /home/dinastycoin/dinastycoin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kgc/dinastycoin
+CMAKE_BINARY_DIR = /home/dinastycoin/dinastycoin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles /home/kgc/dinastycoin/external/miniupnp/miniupnpc/CMakeFiles/progress.marks
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/miniupnp/miniupnpc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles /home/dinastycoin/dinastycoin/external/miniupnp/miniupnpc/CMakeFiles/progress.marks
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/miniupnp/miniupnpc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/miniupnp/miniupnpc/clean
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/miniupnp/miniupnpc/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/miniupnp/miniupnpc/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/miniupnp/miniupnpc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/miniupnp/miniupnpc/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/miniupnp/miniupnpc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/rule
 .PHONY : external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ libminiupnpc-static: external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.
 
 # fast build rule for target.
 libminiupnpc-static/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build
 .PHONY : libminiupnpc-static/fast
 
 connecthostport.o: connecthostport.c.o
@@ -188,7 +188,7 @@ connecthostport.o: connecthostport.c.o
 
 # target to build an object file
 connecthostport.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/connecthostport.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/connecthostport.c.o
 .PHONY : connecthostport.c.o
 
 connecthostport.i: connecthostport.c.i
@@ -197,7 +197,7 @@ connecthostport.i: connecthostport.c.i
 
 # target to preprocess a source file
 connecthostport.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/connecthostport.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/connecthostport.c.i
 .PHONY : connecthostport.c.i
 
 connecthostport.s: connecthostport.c.s
@@ -206,7 +206,7 @@ connecthostport.s: connecthostport.c.s
 
 # target to generate assembly for a file
 connecthostport.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/connecthostport.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/connecthostport.c.s
 .PHONY : connecthostport.c.s
 
 igd_desc_parse.o: igd_desc_parse.c.o
@@ -215,7 +215,7 @@ igd_desc_parse.o: igd_desc_parse.c.o
 
 # target to build an object file
 igd_desc_parse.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/igd_desc_parse.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/igd_desc_parse.c.o
 .PHONY : igd_desc_parse.c.o
 
 igd_desc_parse.i: igd_desc_parse.c.i
@@ -224,7 +224,7 @@ igd_desc_parse.i: igd_desc_parse.c.i
 
 # target to preprocess a source file
 igd_desc_parse.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/igd_desc_parse.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/igd_desc_parse.c.i
 .PHONY : igd_desc_parse.c.i
 
 igd_desc_parse.s: igd_desc_parse.c.s
@@ -233,7 +233,7 @@ igd_desc_parse.s: igd_desc_parse.c.s
 
 # target to generate assembly for a file
 igd_desc_parse.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/igd_desc_parse.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/igd_desc_parse.c.s
 .PHONY : igd_desc_parse.c.s
 
 minisoap.o: minisoap.c.o
@@ -242,7 +242,7 @@ minisoap.o: minisoap.c.o
 
 # target to build an object file
 minisoap.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minisoap.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minisoap.c.o
 .PHONY : minisoap.c.o
 
 minisoap.i: minisoap.c.i
@@ -251,7 +251,7 @@ minisoap.i: minisoap.c.i
 
 # target to preprocess a source file
 minisoap.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minisoap.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minisoap.c.i
 .PHONY : minisoap.c.i
 
 minisoap.s: minisoap.c.s
@@ -260,7 +260,7 @@ minisoap.s: minisoap.c.s
 
 # target to generate assembly for a file
 minisoap.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minisoap.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minisoap.c.s
 .PHONY : minisoap.c.s
 
 minissdpc.o: minissdpc.c.o
@@ -269,7 +269,7 @@ minissdpc.o: minissdpc.c.o
 
 # target to build an object file
 minissdpc.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minissdpc.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minissdpc.c.o
 .PHONY : minissdpc.c.o
 
 minissdpc.i: minissdpc.c.i
@@ -278,7 +278,7 @@ minissdpc.i: minissdpc.c.i
 
 # target to preprocess a source file
 minissdpc.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minissdpc.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minissdpc.c.i
 .PHONY : minissdpc.c.i
 
 minissdpc.s: minissdpc.c.s
@@ -287,7 +287,7 @@ minissdpc.s: minissdpc.c.s
 
 # target to generate assembly for a file
 minissdpc.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minissdpc.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minissdpc.c.s
 .PHONY : minissdpc.c.s
 
 miniupnpc.o: miniupnpc.c.o
@@ -296,7 +296,7 @@ miniupnpc.o: miniupnpc.c.o
 
 # target to build an object file
 miniupnpc.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniupnpc.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniupnpc.c.o
 .PHONY : miniupnpc.c.o
 
 miniupnpc.i: miniupnpc.c.i
@@ -305,7 +305,7 @@ miniupnpc.i: miniupnpc.c.i
 
 # target to preprocess a source file
 miniupnpc.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniupnpc.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniupnpc.c.i
 .PHONY : miniupnpc.c.i
 
 miniupnpc.s: miniupnpc.c.s
@@ -314,7 +314,7 @@ miniupnpc.s: miniupnpc.c.s
 
 # target to generate assembly for a file
 miniupnpc.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniupnpc.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniupnpc.c.s
 .PHONY : miniupnpc.c.s
 
 miniwget.o: miniwget.c.o
@@ -323,7 +323,7 @@ miniwget.o: miniwget.c.o
 
 # target to build an object file
 miniwget.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniwget.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniwget.c.o
 .PHONY : miniwget.c.o
 
 miniwget.i: miniwget.c.i
@@ -332,7 +332,7 @@ miniwget.i: miniwget.c.i
 
 # target to preprocess a source file
 miniwget.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniwget.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniwget.c.i
 .PHONY : miniwget.c.i
 
 miniwget.s: miniwget.c.s
@@ -341,7 +341,7 @@ miniwget.s: miniwget.c.s
 
 # target to generate assembly for a file
 miniwget.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniwget.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniwget.c.s
 .PHONY : miniwget.c.s
 
 minixml.o: minixml.c.o
@@ -350,7 +350,7 @@ minixml.o: minixml.c.o
 
 # target to build an object file
 minixml.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minixml.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minixml.c.o
 .PHONY : minixml.c.o
 
 minixml.i: minixml.c.i
@@ -359,7 +359,7 @@ minixml.i: minixml.c.i
 
 # target to preprocess a source file
 minixml.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minixml.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minixml.c.i
 .PHONY : minixml.c.i
 
 minixml.s: minixml.c.s
@@ -368,7 +368,7 @@ minixml.s: minixml.c.s
 
 # target to generate assembly for a file
 minixml.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minixml.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minixml.c.s
 .PHONY : minixml.c.s
 
 portlistingparse.o: portlistingparse.c.o
@@ -377,7 +377,7 @@ portlistingparse.o: portlistingparse.c.o
 
 # target to build an object file
 portlistingparse.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/portlistingparse.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/portlistingparse.c.o
 .PHONY : portlistingparse.c.o
 
 portlistingparse.i: portlistingparse.c.i
@@ -386,7 +386,7 @@ portlistingparse.i: portlistingparse.c.i
 
 # target to preprocess a source file
 portlistingparse.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/portlistingparse.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/portlistingparse.c.i
 .PHONY : portlistingparse.c.i
 
 portlistingparse.s: portlistingparse.c.s
@@ -395,7 +395,7 @@ portlistingparse.s: portlistingparse.c.s
 
 # target to generate assembly for a file
 portlistingparse.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/portlistingparse.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/portlistingparse.c.s
 .PHONY : portlistingparse.c.s
 
 receivedata.o: receivedata.c.o
@@ -404,7 +404,7 @@ receivedata.o: receivedata.c.o
 
 # target to build an object file
 receivedata.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/receivedata.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/receivedata.c.o
 .PHONY : receivedata.c.o
 
 receivedata.i: receivedata.c.i
@@ -413,7 +413,7 @@ receivedata.i: receivedata.c.i
 
 # target to preprocess a source file
 receivedata.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/receivedata.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/receivedata.c.i
 .PHONY : receivedata.c.i
 
 receivedata.s: receivedata.c.s
@@ -422,7 +422,7 @@ receivedata.s: receivedata.c.s
 
 # target to generate assembly for a file
 receivedata.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/receivedata.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/receivedata.c.s
 .PHONY : receivedata.c.s
 
 upnpcommands.o: upnpcommands.c.o
@@ -431,7 +431,7 @@ upnpcommands.o: upnpcommands.c.o
 
 # target to build an object file
 upnpcommands.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpcommands.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpcommands.c.o
 .PHONY : upnpcommands.c.o
 
 upnpcommands.i: upnpcommands.c.i
@@ -440,7 +440,7 @@ upnpcommands.i: upnpcommands.c.i
 
 # target to preprocess a source file
 upnpcommands.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpcommands.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpcommands.c.i
 .PHONY : upnpcommands.c.i
 
 upnpcommands.s: upnpcommands.c.s
@@ -449,7 +449,7 @@ upnpcommands.s: upnpcommands.c.s
 
 # target to generate assembly for a file
 upnpcommands.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpcommands.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpcommands.c.s
 .PHONY : upnpcommands.c.s
 
 upnpdev.o: upnpdev.c.o
@@ -458,7 +458,7 @@ upnpdev.o: upnpdev.c.o
 
 # target to build an object file
 upnpdev.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpdev.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpdev.c.o
 .PHONY : upnpdev.c.o
 
 upnpdev.i: upnpdev.c.i
@@ -467,7 +467,7 @@ upnpdev.i: upnpdev.c.i
 
 # target to preprocess a source file
 upnpdev.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpdev.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpdev.c.i
 .PHONY : upnpdev.c.i
 
 upnpdev.s: upnpdev.c.s
@@ -476,7 +476,7 @@ upnpdev.s: upnpdev.c.s
 
 # target to generate assembly for a file
 upnpdev.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpdev.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpdev.c.s
 .PHONY : upnpdev.c.s
 
 upnperrors.o: upnperrors.c.o
@@ -485,7 +485,7 @@ upnperrors.o: upnperrors.c.o
 
 # target to build an object file
 upnperrors.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnperrors.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnperrors.c.o
 .PHONY : upnperrors.c.o
 
 upnperrors.i: upnperrors.c.i
@@ -494,7 +494,7 @@ upnperrors.i: upnperrors.c.i
 
 # target to preprocess a source file
 upnperrors.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnperrors.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnperrors.c.i
 .PHONY : upnperrors.c.i
 
 upnperrors.s: upnperrors.c.s
@@ -503,7 +503,7 @@ upnperrors.s: upnperrors.c.s
 
 # target to generate assembly for a file
 upnperrors.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnperrors.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnperrors.c.s
 .PHONY : upnperrors.c.s
 
 upnpreplyparse.o: upnpreplyparse.c.o
@@ -512,7 +512,7 @@ upnpreplyparse.o: upnpreplyparse.c.o
 
 # target to build an object file
 upnpreplyparse.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpreplyparse.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpreplyparse.c.o
 .PHONY : upnpreplyparse.c.o
 
 upnpreplyparse.i: upnpreplyparse.c.i
@@ -521,7 +521,7 @@ upnpreplyparse.i: upnpreplyparse.c.i
 
 # target to preprocess a source file
 upnpreplyparse.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpreplyparse.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpreplyparse.c.i
 .PHONY : upnpreplyparse.c.i
 
 upnpreplyparse.s: upnpreplyparse.c.s
@@ -530,7 +530,7 @@ upnpreplyparse.s: upnpreplyparse.c.s
 
 # target to generate assembly for a file
 upnpreplyparse.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpreplyparse.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpreplyparse.c.s
 .PHONY : upnpreplyparse.c.s
 
 # Help Target
@@ -597,6 +597,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

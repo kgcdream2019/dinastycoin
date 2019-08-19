@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kgc/dinastycoin
+CMAKE_SOURCE_DIR = /home/dinastycoin/dinastycoin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kgc/dinastycoin
+CMAKE_BINARY_DIR = /home/dinastycoin/dinastycoin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles /home/kgc/dinastycoin/external/db_drivers/liblmdb/CMakeFiles/progress.marks
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/db_drivers/liblmdb/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles /home/dinastycoin/dinastycoin/external/db_drivers/liblmdb/CMakeFiles/progress.marks
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/db_drivers/liblmdb/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/db_drivers/liblmdb/clean
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/db_drivers/liblmdb/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/db_drivers/liblmdb/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/db_drivers/liblmdb/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/db_drivers/liblmdb/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/db_drivers/liblmdb/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/rule
 .PHONY : external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ lmdb: external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/rule
 
 # fast build rule for target.
 lmdb/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build.make external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build.make external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build
 .PHONY : lmdb/fast
 
 mdb.o: mdb.c.o
@@ -188,7 +188,7 @@ mdb.o: mdb.c.o
 
 # target to build an object file
 mdb.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build.make external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/mdb.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build.make external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/mdb.c.o
 .PHONY : mdb.c.o
 
 mdb.i: mdb.c.i
@@ -197,7 +197,7 @@ mdb.i: mdb.c.i
 
 # target to preprocess a source file
 mdb.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build.make external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/mdb.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build.make external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/mdb.c.i
 .PHONY : mdb.c.i
 
 mdb.s: mdb.c.s
@@ -206,7 +206,7 @@ mdb.s: mdb.c.s
 
 # target to generate assembly for a file
 mdb.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build.make external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/mdb.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build.make external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/mdb.c.s
 .PHONY : mdb.c.s
 
 midl.o: midl.c.o
@@ -215,7 +215,7 @@ midl.o: midl.c.o
 
 # target to build an object file
 midl.c.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build.make external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/midl.c.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build.make external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/midl.c.o
 .PHONY : midl.c.o
 
 midl.i: midl.c.i
@@ -224,7 +224,7 @@ midl.i: midl.c.i
 
 # target to preprocess a source file
 midl.c.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build.make external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/midl.c.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build.make external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/midl.c.i
 .PHONY : midl.c.i
 
 midl.s: midl.c.s
@@ -233,7 +233,7 @@ midl.s: midl.c.s
 
 # target to generate assembly for a file
 midl.c.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build.make external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/midl.c.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/build.make external/db_drivers/liblmdb/CMakeFiles/lmdb.dir/midl.c.s
 .PHONY : midl.c.s
 
 # Help Target
@@ -267,6 +267,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

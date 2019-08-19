@@ -96,7 +96,7 @@ namespace tools
 
   std::string get_update_url(const std::string &software, const std::string &subdir, const std::string &buildtag, const std::string &version, bool user)
   {
-    const char *base = user ? "https://downloads.dinastycoin.org/" : "https://updates.dinastycoin.org/";
+    const char *base = user ? "https://downloads.dinastycoin.com/" : "https://updates.dinastycoin.com/";
 #ifdef _WIN32
     static const char *extension = strncmp(buildtag.c_str(), "install-", 8) ? ".zip" : ".exe";
 #else

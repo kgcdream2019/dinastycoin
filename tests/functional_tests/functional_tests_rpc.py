@@ -37,7 +37,7 @@ except:
 N_DINASTYCOINDS = 1
 N_WALLETS = 4
 
-dinastycoind_base = [builddir + "/bin/dinastyd", "--regtest", "--fixed-difficulty", "1", "--offline", "--no-igd", "--p2p-bind-port", "dinastycoind_p2p_port", "--rpc-bind-port", "dinastycoind_rpc_port", "--zmq-rpc-bind-port", "dinastycoind_zmq_port", "--non-interactive", "--disable-dns-checkpoints", "--check-updates", "disabled", "--rpc-ssl", "disabled", "--log-level", "4"]
+dinastycoind_base = [builddir + "/bin/dinastycoind", "--regtest", "--fixed-difficulty", "1", "--offline", "--no-igd", "--p2p-bind-port", "dinastycoind_p2p_port", "--rpc-bind-port", "dinastycoind_rpc_port", "--zmq-rpc-bind-port", "dinastycoind_zmq_port", "--non-interactive", "--disable-dns-checkpoints", "--check-updates", "disabled", "--rpc-ssl", "disabled", "--log-level", "4"]
 wallet_base = [builddir + "/bin/dinasty-wallet-rpc", "--wallet-dir", builddir + "/functional-tests-directory", "--rpc-bind-port", "wallet_port", "--disable-rpc-login", "--rpc-ssl", "disabled", "--daemon-ssl", "disabled", "--daemon-port", "37175", "--log-level", "4"]
 
 command_lines = []

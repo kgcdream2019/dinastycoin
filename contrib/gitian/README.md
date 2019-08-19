@@ -106,7 +106,7 @@ Setup the required environment, you only need to do this once:
 ./gitian-build.py --setup fluffypony v0.14.0
 ```
 
-Where `fluffypony` is your Github name and `v0.14.0` is the version tag you want to build. 
+Where `fluffypony` is your Github name and `v0.14.0` is the version tag you want to build.
 If you are using docker, run it with:
 
 ```bash
@@ -140,7 +140,7 @@ If you do detached, offline signing, you need to copy these uncommited changes t
 
 ```bash
 export NAME=fluffypony
-export VERSION=v0.14.0
+export VERSION=v3.14.0
 gpg --output $VERSION-linux/$NAME/dinastycoin-linux-$VERSION-build.assert.sig --detach-sign $VERSION-linux/$NAME/dinastycoin-linux-$VERSION-build.assert
 gpg --output $VERSION-osx-unsigned/$NAME/dinastycoin-osx-$VERSION-build.assert.sig --detach-sign $VERSION-osx-unsigned/$NAME/dinastycoin-osx-$VERSION-build.assert
 gpg --output $VERSION-win-unsigned/$NAME/dinastycoin-win-$VERSION-build.assert.sig --detach-sign $VERSION-win-unsigned/$NAME/dinastycoin-win-$VERSION-build.assert
@@ -150,9 +150,9 @@ Make a pull request (both the `.assert` and `.assert.sig` files) to the
 [dinastycoin-project/gitian.sigs](https://github.com/dinastyoffreedom/gitian.sigs/) repository:
 
 ```bash
-git checkout -b v0.14.0
-git commit -S -a -m "Add $NAME v0.14.0"
-git push --set-upstream $NAME v0.14.0
+git checkout -b v3.14.0
+git commit -S -a -m "Add $NAME v3.14.0"
+git push --set-upstream $NAME v3.14.0
 ```
 
 ```bash

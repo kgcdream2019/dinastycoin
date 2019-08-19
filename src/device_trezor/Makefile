@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kgc/dinastycoin
+CMAKE_SOURCE_DIR = /home/dinastycoin/dinastycoin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kgc/dinastycoin
+CMAKE_BINARY_DIR = /home/dinastycoin/dinastycoin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles /home/kgc/dinastycoin/src/device_trezor/CMakeFiles/progress.marks
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device_trezor/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles /home/dinastycoin/dinastycoin/src/device_trezor/CMakeFiles/progress.marks
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device_trezor/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device_trezor/clean
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device_trezor/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device_trezor/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device_trezor/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device_trezor/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device_trezor/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/device_trezor/CMakeFiles/obj_device_trezor.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device_trezor/CMakeFiles/obj_device_trezor.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device_trezor/CMakeFiles/obj_device_trezor.dir/rule
 .PHONY : src/device_trezor/CMakeFiles/obj_device_trezor.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ obj_device_trezor: src/device_trezor/CMakeFiles/obj_device_trezor.dir/rule
 
 # fast build rule for target.
 obj_device_trezor/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device_trezor/CMakeFiles/obj_device_trezor.dir/build.make src/device_trezor/CMakeFiles/obj_device_trezor.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device_trezor/CMakeFiles/obj_device_trezor.dir/build.make src/device_trezor/CMakeFiles/obj_device_trezor.dir/build
 .PHONY : obj_device_trezor/fast
 
 # Convenience name for target.
 src/device_trezor/CMakeFiles/device_trezor.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device_trezor/CMakeFiles/device_trezor.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device_trezor/CMakeFiles/device_trezor.dir/rule
 .PHONY : src/device_trezor/CMakeFiles/device_trezor.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ device_trezor: src/device_trezor/CMakeFiles/device_trezor.dir/rule
 
 # fast build rule for target.
 device_trezor/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device_trezor/CMakeFiles/device_trezor.dir/build.make src/device_trezor/CMakeFiles/device_trezor.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device_trezor/CMakeFiles/device_trezor.dir/build.make src/device_trezor/CMakeFiles/device_trezor.dir/build
 .PHONY : device_trezor/fast
 
 device_trezor.o: device_trezor.cpp.o
@@ -203,7 +203,7 @@ device_trezor.o: device_trezor.cpp.o
 
 # target to build an object file
 device_trezor.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device_trezor/CMakeFiles/obj_device_trezor.dir/build.make src/device_trezor/CMakeFiles/obj_device_trezor.dir/device_trezor.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device_trezor/CMakeFiles/obj_device_trezor.dir/build.make src/device_trezor/CMakeFiles/obj_device_trezor.dir/device_trezor.cpp.o
 .PHONY : device_trezor.cpp.o
 
 device_trezor.i: device_trezor.cpp.i
@@ -212,7 +212,7 @@ device_trezor.i: device_trezor.cpp.i
 
 # target to preprocess a source file
 device_trezor.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device_trezor/CMakeFiles/obj_device_trezor.dir/build.make src/device_trezor/CMakeFiles/obj_device_trezor.dir/device_trezor.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device_trezor/CMakeFiles/obj_device_trezor.dir/build.make src/device_trezor/CMakeFiles/obj_device_trezor.dir/device_trezor.cpp.i
 .PHONY : device_trezor.cpp.i
 
 device_trezor.s: device_trezor.cpp.s
@@ -221,7 +221,7 @@ device_trezor.s: device_trezor.cpp.s
 
 # target to generate assembly for a file
 device_trezor.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device_trezor/CMakeFiles/obj_device_trezor.dir/build.make src/device_trezor/CMakeFiles/obj_device_trezor.dir/device_trezor.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device_trezor/CMakeFiles/obj_device_trezor.dir/build.make src/device_trezor/CMakeFiles/obj_device_trezor.dir/device_trezor.cpp.s
 .PHONY : device_trezor.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -6,13 +6,9 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 ## Table of Contents
 
   - [Development resources](#development-resources)
-  - [Vulnerability response](#vulnerability-response)
-  - [Research](#research)
-  - [Announcements](#announcements)
   - [Translations](#translations)
   - [Build](#build)
     - [IMPORTANT](#important)
-  - [Coverage](#coverage)
   - [Introduction](#introduction)
   - [About this project](#about-this-project)
   - [Supporting the project](#supporting-the-project)
@@ -25,34 +21,14 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 
 ## Development resources
 
-- Web: [dinastyofreedom.org](https://www.dinastyofreedom.org/)
-- Forum: [forum.dinastyofreedom.org](https://forum.dinastyofreedom.org)
-- Mail: [dev@dinastyofreedom.org](mailto:dev@dinastyofreedom.org)
+- Web: [dinastycoin.com](https://www.dinastycoin.com/en/)
+- Mail: [dev@dinastycoin.com](mailto:dev@dinastycoin.com)
 - GitHub: [https://github.com/dinastyoffreedom/dinastycoin](https://github.com/dinastyoffreedom/dinastycoin)
 
-## Vulnerability response
-
-- Our [Vulnerability Response Process](https://github.com/dinastyoffreedom/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md) encourages responsible disclosure
-- We are also available via [HackerOne](https://hackerone.com/dinastycoin)
-
-## Research
-
-The [Dinastycoin Research Lab](https://src.dinastyofreedom.org/resources/research-lab/) is an open forum where the community coordinates research into Dinastycoin cryptography, protocols, fungibility, analysis, and more. We welcome collaboration and contributions from outside researchers! Because not all Lab work and publications are distributed as traditional preprints or articles, they may be easy to miss if you are conducting literature reviews for your own Dinastycoin research. You are encouraged to get in touch with our researchers if you have questions, wish to collaborate, or would like guidance to help avoid unnecessarily duplicating earlier or known work.
-
-Our researchers are available on IRC in [#dinastycoin-research-lab on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%dinastycoin-research-lab&prompt=1&uio=d4) or by email:
-
-- Sarang Noether, Ph.D.: [sarang@dinastyofreedom.org](mailto:sarang@dinastyofreedom.org) or [sarang.noether@protonmail.com](mailto:sarang.noether@protonmail.com); [research repository](https://github.com/SarangNoether/research-lab)
-- Surae Noether (Brandon Goodell), Ph.D.: [surae@dinastyofreedom.org](mailto:surae@dinastyofreedom.org) or [surae.noether@protonmail.com](mailto:surae.noether@protonmail.com); [research repository](https://github.com/b-g-goodell/research-lab)
-
-## Announcements
-
-- You can subscribe to an [announcement listserv](https://lists.dinastyofreedom.org) to get critical announcements from the Dinastycoin core team. The announcement list can be very helpful for knowing when software updates are needed.
 
 ## Translations
-The CLI wallet is available in different languages. If you want to help translate it, see our self-hosted localization platform, Pootle, on [translate.dinastyofreedom.org](https://translate.dinastyofreedom.org/projects/CLI/). Every translation *must* be uploaded on the platform, pull requests directly editing the code in this repository will be closed. If you need help with Pootle, you can find a guide with screenshots [here](https://github.com/dinastycoin-ecosystem/dinastycoin-translations/blob/master/pootle.md).
+The CLI wallet is available in different languages. If you want to help translate it, see our self-hosted localization platform, Pootle.
 &nbsp;
-
-If you need help/support/info about translations, contact the localization workgroup. You can find the complete list of contacts on the repository of the workgroup: [dinastycoin-translations](https://github.com/dinastycoin-ecosystem/dinastycoin-translations#contacts).
 
 ## Build
 
@@ -60,27 +36,6 @@ If you need help/support/info about translations, contact the localization workg
 
 These builds are of the master branch, which is used for active development and can be either unstable or incompatible with release software. Please compile release branches.
 
-| Operating System      | Processor | Status |
-| --------------------- | -------- |--------|
-| Ubuntu 16.04          |  i686    | [![Ubuntu 16.04 i686](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-ubuntu-i686)](https://build.dinastyofreedom.org/builders/dinastycoin-static-ubuntu-i686)
-| Ubuntu 16.04          |  amd64   | [![Ubuntu 16.04 amd64](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-ubuntu-amd64)](https://build.dinastyofreedom.org/builders/dinastycoin-static-ubuntu-amd64)
-| Ubuntu 16.04          |  armv7   | [![Ubuntu 16.04 armv7](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-ubuntu-arm7)](https://build.dinastyofreedom.org/builders/dinastycoin-static-ubuntu-arm7)
-| Debian Stable         |  armv8   | [![Debian armv8](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-debian-armv8)](https://build.dinastyofreedom.org/builders/dinastycoin-static-debian-armv8)
-| macOS 10.11             |  amd64   | [![macOS 10.11 amd64](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-osx-10.11)](https://build.dinastyofreedom.org/builders/dinastycoin-static-osx-10.11)
-| macOS 10.12             |  amd64   | [![macOS 10.12 amd64](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-osx-10.12)](https://build.dinastyofreedom.org/builders/dinastycoin-static-osx-10.12)
-| macOS 10.13             |  amd64   | [![macOS 10.13 amd64](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-osx-10.13)](https://build.dinastyofreedom.org/builders/dinastycoin-static-osx-10.13)
-| FreeBSD 11            |  amd64   | [![FreeBSD 11 amd64](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-freebsd64)](https://build.dinastyofreedom.org/builders/dinastycoin-static-freebsd64)
-| DragonFly BSD 4.6     |  amd64   | [![DragonFly BSD amd64](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-dragonflybsd-amd64)](https://build.dinastyofreedom.org/builders/dinastycoin-static-dragonflybsd-amd64)
-| Windows (MSYS2/MinGW) |  i686    | [![Windows (MSYS2/MinGW) i686](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-win32)](https://build.dinastyofreedom.org/builders/dinastycoin-static-win32)
-| Windows (MSYS2/MinGW) |  amd64   | [![Windows (MSYS2/MinGW) amd64](https://build.dinastyofreedom.org/png?builder=dinastycoin-static-win64)](https://build.dinastyofreedom.org/builders/dinastycoin-static-win64)
-
-## Coverage
-
-| Type      | Status |
-|-----------|--------|
-| Coverity  | [![Coverity Status](https://scan.coverity.com/projects/9657/badge.svg)](https://scan.coverity.com/projects/9657/)
-| Coveralls | [![Coveralls Status](https://coveralls.io/repos/github/dinastycoin-project/dinastycoin/badge.svg?branch=master)](https://coveralls.io/github/dinastycoin-project/dinastycoin?branch=master)
-| License   | [![License](https://img.shields.io/badge/license-BSD3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Introduction
 
@@ -104,23 +59,11 @@ As with many development projects, the repository on Github is considered to be 
 
 ## Supporting the project
 
-Dinastycoin is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. Both Dinastycoin and Bitcoin donations can be made to **donate.dinastyofreedom.org** if using a client that supports the [OpenAlias](https://openalias.org) standard. Alternatively you can send DCY to the Dinastycoin donation address via the `donate` command (type `help` in the command-line wallet for details).
-
-The Dinastycoin donation address is: `44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A` (viewkey: `f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501`)
-
-The Bitcoin donation address is: `1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H`
+Dinastycoin is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. Both Dinastycoin and Bitcoin donations can be made to **donate.dinastycoin.com** if using a client that supports the [OpenAlias](https://openalias.org) standard. Alternatively you can send DCY to the Dinastycoin donation address via the `donate` command (type `help` in the command-line wallet for details).
 
 Core development funding and/or some supporting services are also graciously provided by sponsors:
 
-[<img width="80" src="https://static.dinastyofreedom.org/images/sponsors/mydinastycoin.png"/>](https://mydinastycoin.com)
-[<img width="150" src="https://static.dinastyofreedom.org/images/sponsors/kitware.png?1"/>](https://kitware.com)
-[<img width="100" src="https://static.dinastyofreedom.org/images/sponsors/dome9.png"/>](https://dome9.com)
-[<img width="150" src="https://static.dinastyofreedom.org/images/sponsors/araxis.png"/>](https://araxis.com)
-[<img width="150" src="https://static.dinastyofreedom.org/images/sponsors/jetbrains.png"/>](https://www.jetbrains.com/)
-[<img width="150" src="https://static.dinastyofreedom.org/images/sponsors/navicat.png"/>](https://www.navicat.com/)
-[<img width="150" src="https://static.dinastyofreedom.org/images/sponsors/symas.png"/>](https://www.symas.com/)
-
-There are also several mining pools that kindly donate a portion of their fees, [a list of them can be found on our Bitcointalk post](https://bitcointalk.org/index.php?topic=583449.0).
+There are also several mining pools that kindly donate a portion of their fees.
 
 ## License
 
@@ -138,16 +81,6 @@ Dates are provided in the format YYYY-MM-DD.
 
 | Software upgrade block height  | Date       | Fork version      | Minimum Dinastycoin version | Recommended Dinastycoin version | Details                                                                            |
 | ------------------------------ | -----------| ----------------- | ---------------------- | -------------------------- | ---------------------------------------------------------------------------------- |
-| 1009827                        | 2016-03-22 | v2                | v0.9.4                 | v0.9.4                     | Allow only >= ringsize 3, blocktime = 120 seconds, fee-free blocksize 60 kb       |
-| 1141317                        | 2016-09-21 | v3                | v0.9.4                 | v0.10.0                    | Splits coinbase into denominations  |
-| 1220516                        | 2017-01-05 | v4                | v0.10.1                | v0.10.2.1                  | Allow normal and RingCT transactions |
-| 1288616                        | 2017-04-15 | v5                | v0.10.3.0              | v0.10.3.1                  | Adjusted minimum blocksize and fee algorithm      |
-| 1400000                        | 2017-09-16 | v6                | v0.11.0.0              | v0.11.0.0                  | Allow only RingCT transactions, allow only >= ringsize 5      |
-| 1546000                        | 2018-04-06 | v7                | v0.12.0.0              | v0.12.3.0                  | Cryptonight variant 1, ringsize >= 7, sorted inputs
-| 1685555                        | 2018-10-18 | v8                | v0.13.0.0              | v0.13.0.4                  | max transaction size at half the penalty free block size, bulletproofs enabled, cryptonight variant 2, fixed ringsize [11](https://youtu.be/KOO5S4vxi0o)
-| 1686275                        | 2018-10-19 | v9                | v0.13.0.0              | v0.13.0.4                  | bulletproofs required
-| 1788000                        | 2019-03-09 | v10               | v0.14.0.0              | v0.14.1.0                  | New PoW based on Cryptonight-R, new block weight algorithm, slightly more efficient RingCT format
-| 1788720                        | 2019-03-10 | v11               | v0.14.0.0              | v0.14.1.0                  | forbid old RingCT transaction format
 | XXXXXXX                        | 2019-10-XX | XX                | XXXXXXXXX              | XXXXXXXXX                  | X
 
 X's indicate that these details have not been determined as of commit date.
@@ -227,7 +160,7 @@ invokes cmake commands as needed.
 
     ```bash
     cd dinastycoin
-    git checkout release-v0.14
+    git checkout release-v3.14
     make
     ```
 
@@ -303,7 +236,7 @@ Tested on a Raspberry Pi Zero with a clean install of minimal Raspbian Stretch (
     ```bash
     git clone https://github.com/dinastyoffreedom/dinastycoin.git
     cd dinastycoin
-    git checkout tags/v0.14.1.0
+    git checkout tags/v3.14
     ```
 
 * Build:
@@ -420,10 +353,10 @@ application.
     cd dinastycoin
     ```
 
-* If you would like a specific [version/tag](https://github.com/dinastyoffreedom/dinastycoin/tags), do a git checkout for that version. eg. 'v0.14.1.0'. If you don't care about the version and just want binaries from master, skip this step:
+* If you would like a specific [version/tag](https://github.com/dinastyoffreedom/dinastycoin/tags), do a git checkout for that version. eg. 'v3.14'. If you don't care about the version and just want binaries from master, skip this step:
 	
     ```bash
-    git checkout v0.14.1.0
+    git checkout v3.14
     ```
 
 * If you are on a 64-bit system, run:
@@ -630,23 +563,8 @@ Using `depends` might also be easier to compile Dinastycoin on Windows than usin
 
 The produced binaries still link libc dynamically. If the binary is compiled on a current distribution, it might not run on an older distribution with an older installation of libc. Passing `-DBACKCOMPAT=ON` to cmake will make sure that the binary will run on systems having at least libc version 2.17.
 
-## Installing Dinastycoin from a package
-
-**DISCLAIMER: These packages are not part of this repository or maintained by this project's contributors, and as such, do not go through the same review process to ensure their trustworthiness and security.**
-
-Packages are available for
-
-* Ubuntu and [snap supported](https://snapcraft.io/docs/core/install) systems, via a community contributed build.
-
-    ```bash
-    snap install dinastycoin --beta
-    ```
 
 Installing a snap is very quick. Snaps are secure. They are isolated with all of their dependencies. Snaps also auto update when a new version is released.
-
-* Arch Linux (via [AUR](https://aur.archlinux.org/)):
-  - Stable release: [`dinastycoin`](https://aur.archlinux.org/packages/dinastycoin)
-  - Bleeding edge: [`dinastycoin-git`](https://aur.archlinux.org/packages/dinastycoin-git)
 
 * Void Linux:
 
@@ -688,10 +606,10 @@ from which cmake was invoked (repository root by default). To run in
 foreground:
 
 ```bash
-./bin/dinastyd
+./bin/dinastycoind
 ```
 
-To list all available options, run `./bin/dinastyd --help`.  Options can be
+To list all available options, run `./bin/dinastycoind --help`.  Options can be
 specified either on the command line or in a configuration file passed by the
 `--config-file` argument.  To specify an option in the configuration file, add
 a line with the syntax `argumentname=value`, where `argumentname` is the name
@@ -700,15 +618,15 @@ of the argument without the leading dashes, for example `log-level=1`.
 To run in background:
 
 ```bash
-./bin/dinastyd --log-file dinastycoind.log --detach
+./bin/dinastycoind --log-file dinastycoind.log --detach
 ```
 
 To run as a systemd service, copy
 [dinastycoind.service](utils/systemd/dinastycoind.service) to `/etc/systemd/system/` and
-[dinastyd.conf](utils/conf/dinastyd.conf) to `/etc/`. The [example
+[dinastycoind.conf](utils/conf/dinastycoind.conf) to `/etc/`. The [example
 service](utils/systemd/dinastycoind.service) assumes that the user `dinastycoin` exists
 and its home is the data directory specified in the [example
-config](utils/conf/dinastyd.conf).
+config](utils/conf/dinastycoind.conf).
 
 If you're on Mac, you may need to add the `--max-concurrency 1` option to
 dinasty-wallet-cli, and possibly dinastycoind, if you get crashes refreshing.
@@ -729,8 +647,8 @@ While Dinastycoin isn't made to integrate with Tor, it can be used wrapped with 
 setting the following configuration parameters and environment variables:
 
 * `--p2p-bind-ip 127.0.0.1` on the command line or `p2p-bind-ip=127.0.0.1` in
-  dinastyd.conf to disable listening for connections on external interfaces.
-* `--no-igd` on the command line or `no-igd=1` in dinastyd.conf to disable IGD
+  dinastycoind.conf to disable listening for connections on external interfaces.
+* `--no-igd` on the command line or `no-igd=1` in dinastycoind.conf to disable IGD
   (UPnP port forwarding negotiation), which is pointless with Tor.
 * `DNS_PUBLIC=tcp` or `DNS_PUBLIC=tcp://x.x.x.x` where x.x.x.x is the IP of the
   desired DNS server, for DNS requests to go over TCP, so that they are routed

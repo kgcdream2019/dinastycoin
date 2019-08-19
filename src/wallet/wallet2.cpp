@@ -2494,7 +2494,7 @@ void wallet2::process_parsed_blocks(uint64_t start_height, const std::vector<cry
 {
   size_t current_index = start_height;
   blocks_added = 0;
-  //this is newly added code by kgc
+  //this is newly added code by zealousWang
   //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   //Force processing of genesis transaction
   if ((m_blockchain.size() == 1) && (start_height == 0)) {
@@ -12972,10 +12972,10 @@ uint64_t wallet2::get_segregation_fork_height() const
   {
     // All four DinastycoinPulse domains have DNSSEC on and valid
     static const std::vector<std::string> dns_urls = {
-        "segheights.dinastyofreedom.org",
-        "segheights.dinastyofreedom.net",
-        "segheights.dinastyofreedom.co",
-        "segheights.dinastyofreedom.se"
+        "segheights1.dinastycoin.com",
+        "segheights2.dinastycoin.com",
+        "segheights3.dinastycoin.com",
+        "segheights4.dinastycoin.com",
     };
 
     const uint64_t current_height = get_blockchain_current_height();

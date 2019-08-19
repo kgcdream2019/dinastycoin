@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kgc/dinastycoin
+CMAKE_SOURCE_DIR = /home/dinastycoin/dinastycoin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kgc/dinastycoin
+CMAKE_BINARY_DIR = /home/dinastycoin/dinastycoin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles /home/kgc/dinastycoin/src/p2p/CMakeFiles/progress.marks
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles /home/dinastycoin/dinastycoin/src/p2p/CMakeFiles/progress.marks
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/clean
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/p2p/CMakeFiles/p2p.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/CMakeFiles/p2p.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/CMakeFiles/p2p.dir/rule
 .PHONY : src/p2p/CMakeFiles/p2p.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ p2p: src/p2p/CMakeFiles/p2p.dir/rule
 
 # fast build rule for target.
 p2p/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/p2p.dir/build.make src/p2p/CMakeFiles/p2p.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/p2p.dir/build.make src/p2p/CMakeFiles/p2p.dir/build
 .PHONY : p2p/fast
 
 # Convenience name for target.
 src/p2p/CMakeFiles/obj_p2p.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/CMakeFiles/obj_p2p.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/CMakeFiles/obj_p2p.dir/rule
 .PHONY : src/p2p/CMakeFiles/obj_p2p.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ obj_p2p: src/p2p/CMakeFiles/obj_p2p.dir/rule
 
 # fast build rule for target.
 obj_p2p/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/build
 .PHONY : obj_p2p/fast
 
 net_node.o: net_node.cpp.o
@@ -203,7 +203,7 @@ net_node.o: net_node.cpp.o
 
 # target to build an object file
 net_node.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_node.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_node.cpp.o
 .PHONY : net_node.cpp.o
 
 net_node.i: net_node.cpp.i
@@ -212,7 +212,7 @@ net_node.i: net_node.cpp.i
 
 # target to preprocess a source file
 net_node.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_node.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_node.cpp.i
 .PHONY : net_node.cpp.i
 
 net_node.s: net_node.cpp.s
@@ -221,7 +221,7 @@ net_node.s: net_node.cpp.s
 
 # target to generate assembly for a file
 net_node.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_node.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_node.cpp.s
 .PHONY : net_node.cpp.s
 
 net_peerlist.o: net_peerlist.cpp.o
@@ -230,7 +230,7 @@ net_peerlist.o: net_peerlist.cpp.o
 
 # target to build an object file
 net_peerlist.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_peerlist.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_peerlist.cpp.o
 .PHONY : net_peerlist.cpp.o
 
 net_peerlist.i: net_peerlist.cpp.i
@@ -239,7 +239,7 @@ net_peerlist.i: net_peerlist.cpp.i
 
 # target to preprocess a source file
 net_peerlist.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_peerlist.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_peerlist.cpp.i
 .PHONY : net_peerlist.cpp.i
 
 net_peerlist.s: net_peerlist.cpp.s
@@ -248,7 +248,7 @@ net_peerlist.s: net_peerlist.cpp.s
 
 # target to generate assembly for a file
 net_peerlist.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_peerlist.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_peerlist.cpp.s
 .PHONY : net_peerlist.cpp.s
 
 # Help Target
@@ -283,6 +283,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

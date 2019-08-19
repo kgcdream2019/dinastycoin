@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kgc/dinastycoin
+CMAKE_SOURCE_DIR = /home/dinastycoin/dinastycoin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kgc/dinastycoin
+CMAKE_BINARY_DIR = /home/dinastycoin/dinastycoin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles /home/kgc/dinastycoin/external/easylogging++/CMakeFiles/progress.marks
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles /home/dinastycoin/dinastycoin/external/easylogging++/CMakeFiles/progress.marks
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/clean
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 external/easylogging++/CMakeFiles/easylogging.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/CMakeFiles/easylogging.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/CMakeFiles/easylogging.dir/rule
 .PHONY : external/easylogging++/CMakeFiles/easylogging.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ easylogging: external/easylogging++/CMakeFiles/easylogging.dir/rule
 
 # fast build rule for target.
 easylogging/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/easylogging++/CMakeFiles/easylogging.dir/build.make external/easylogging++/CMakeFiles/easylogging.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/easylogging++/CMakeFiles/easylogging.dir/build.make external/easylogging++/CMakeFiles/easylogging.dir/build
 .PHONY : easylogging/fast
 
 easylogging++.o: easylogging++.cc.o
@@ -188,7 +188,7 @@ easylogging++.o: easylogging++.cc.o
 
 # target to build an object file
 easylogging++.cc.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/easylogging++/CMakeFiles/easylogging.dir/build.make external/easylogging++/CMakeFiles/easylogging.dir/easylogging++.cc.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/easylogging++/CMakeFiles/easylogging.dir/build.make external/easylogging++/CMakeFiles/easylogging.dir/easylogging++.cc.o
 .PHONY : easylogging++.cc.o
 
 easylogging++.i: easylogging++.cc.i
@@ -197,7 +197,7 @@ easylogging++.i: easylogging++.cc.i
 
 # target to preprocess a source file
 easylogging++.cc.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/easylogging++/CMakeFiles/easylogging.dir/build.make external/easylogging++/CMakeFiles/easylogging.dir/easylogging++.cc.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/easylogging++/CMakeFiles/easylogging.dir/build.make external/easylogging++/CMakeFiles/easylogging.dir/easylogging++.cc.i
 .PHONY : easylogging++.cc.i
 
 easylogging++.s: easylogging++.cc.s
@@ -206,7 +206,7 @@ easylogging++.s: easylogging++.cc.s
 
 # target to generate assembly for a file
 easylogging++.cc.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f external/easylogging++/CMakeFiles/easylogging.dir/build.make external/easylogging++/CMakeFiles/easylogging.dir/easylogging++.cc.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f external/easylogging++/CMakeFiles/easylogging.dir/build.make external/easylogging++/CMakeFiles/easylogging.dir/easylogging++.cc.s
 .PHONY : easylogging++.cc.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/kgc/dinastycoin/src
-# Build directory: /home/kgc/dinastycoin/src
+# Source directory: /home/dinastycoin/dinastycoin/src
+# Build directory: /home/dinastycoin/dinastycoin/src
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

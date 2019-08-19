@@ -220,10 +220,10 @@ bool checkpoints::load_checkpoints_from_json(const std::string &json_hashfile_fu
 };
 
 
-    static const std::vector<std::string> stagenet_dns_urls = { "stagenetpoints.dinastyofreedom.se"
-                   , "stagenetpoints.dinastyofreedom.org"
-                   , "stagenetpoints.dinastyofreedom.net"
-                   , "stagenetpoints.dinastyofreedom.co"
+    static const std::vector<std::string> stagenet_dns_urls = { "stagenetpoints1.dinastycoin.com"
+                   , "stagenetpoints2.dinastycoin.com"
+                   , "stagenetpoints3.dinastycoin.com"
+                   , "stagenetpoints4.dinastycoin.com"
     };
 
     if (!tools::dns_utils::load_txt_records_from_dns(records, nettype == TESTNET ? testnet_dns_urls : nettype == STAGENET ? stagenet_dns_urls : dns_urls))

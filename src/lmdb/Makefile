@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kgc/dinastycoin
+CMAKE_SOURCE_DIR = /home/dinastycoin/dinastycoin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kgc/dinastycoin
+CMAKE_BINARY_DIR = /home/dinastycoin/dinastycoin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles /home/kgc/dinastycoin/src/lmdb/CMakeFiles/progress.marks
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/lmdb/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles /home/dinastycoin/dinastycoin/src/lmdb/CMakeFiles/progress.marks
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/lmdb/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/lmdb/clean
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/lmdb/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/lmdb/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/lmdb/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/lmdb/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/lmdb/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/lmdb/CMakeFiles/lmdb_lib.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/lmdb/CMakeFiles/lmdb_lib.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/lmdb/CMakeFiles/lmdb_lib.dir/rule
 .PHONY : src/lmdb/CMakeFiles/lmdb_lib.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ lmdb_lib: src/lmdb/CMakeFiles/lmdb_lib.dir/rule
 
 # fast build rule for target.
 lmdb_lib/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/lmdb_lib.dir/build.make src/lmdb/CMakeFiles/lmdb_lib.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/lmdb_lib.dir/build.make src/lmdb/CMakeFiles/lmdb_lib.dir/build
 .PHONY : lmdb_lib/fast
 
 # Convenience name for target.
 src/lmdb/CMakeFiles/obj_lmdb_lib.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/lmdb/CMakeFiles/obj_lmdb_lib.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/lmdb/CMakeFiles/obj_lmdb_lib.dir/rule
 .PHONY : src/lmdb/CMakeFiles/obj_lmdb_lib.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ obj_lmdb_lib: src/lmdb/CMakeFiles/obj_lmdb_lib.dir/rule
 
 # fast build rule for target.
 obj_lmdb_lib/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build
 .PHONY : obj_lmdb_lib/fast
 
 database.o: database.cpp.o
@@ -203,7 +203,7 @@ database.o: database.cpp.o
 
 # target to build an object file
 database.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/database.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/database.cpp.o
 .PHONY : database.cpp.o
 
 database.i: database.cpp.i
@@ -212,7 +212,7 @@ database.i: database.cpp.i
 
 # target to preprocess a source file
 database.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/database.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/database.cpp.i
 .PHONY : database.cpp.i
 
 database.s: database.cpp.s
@@ -221,7 +221,7 @@ database.s: database.cpp.s
 
 # target to generate assembly for a file
 database.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/database.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/database.cpp.s
 .PHONY : database.cpp.s
 
 error.o: error.cpp.o
@@ -230,7 +230,7 @@ error.o: error.cpp.o
 
 # target to build an object file
 error.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/error.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/error.cpp.o
 .PHONY : error.cpp.o
 
 error.i: error.cpp.i
@@ -239,7 +239,7 @@ error.i: error.cpp.i
 
 # target to preprocess a source file
 error.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/error.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/error.cpp.i
 .PHONY : error.cpp.i
 
 error.s: error.cpp.s
@@ -248,7 +248,7 @@ error.s: error.cpp.s
 
 # target to generate assembly for a file
 error.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/error.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/error.cpp.s
 .PHONY : error.cpp.s
 
 table.o: table.cpp.o
@@ -257,7 +257,7 @@ table.o: table.cpp.o
 
 # target to build an object file
 table.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/table.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/table.cpp.o
 .PHONY : table.cpp.o
 
 table.i: table.cpp.i
@@ -266,7 +266,7 @@ table.i: table.cpp.i
 
 # target to preprocess a source file
 table.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/table.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/table.cpp.i
 .PHONY : table.cpp.i
 
 table.s: table.cpp.s
@@ -275,7 +275,7 @@ table.s: table.cpp.s
 
 # target to generate assembly for a file
 table.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/table.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/table.cpp.s
 .PHONY : table.cpp.s
 
 value_stream.o: value_stream.cpp.o
@@ -284,7 +284,7 @@ value_stream.o: value_stream.cpp.o
 
 # target to build an object file
 value_stream.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/value_stream.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/value_stream.cpp.o
 .PHONY : value_stream.cpp.o
 
 value_stream.i: value_stream.cpp.i
@@ -293,7 +293,7 @@ value_stream.i: value_stream.cpp.i
 
 # target to preprocess a source file
 value_stream.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/value_stream.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/value_stream.cpp.i
 .PHONY : value_stream.cpp.i
 
 value_stream.s: value_stream.cpp.s
@@ -302,7 +302,7 @@ value_stream.s: value_stream.cpp.s
 
 # target to generate assembly for a file
 value_stream.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/value_stream.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/lmdb/CMakeFiles/obj_lmdb_lib.dir/build.make src/lmdb/CMakeFiles/obj_lmdb_lib.dir/value_stream.cpp.s
 .PHONY : value_stream.cpp.s
 
 # Help Target
@@ -343,6 +343,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

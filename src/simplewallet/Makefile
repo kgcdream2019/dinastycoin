@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kgc/dinastycoin
+CMAKE_SOURCE_DIR = /home/dinastycoin/dinastycoin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kgc/dinastycoin
+CMAKE_BINARY_DIR = /home/dinastycoin/dinastycoin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles /home/kgc/dinastycoin/src/simplewallet/CMakeFiles/progress.marks
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/simplewallet/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles /home/dinastycoin/dinastycoin/src/simplewallet/CMakeFiles/progress.marks
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/simplewallet/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/simplewallet/clean
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/simplewallet/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/simplewallet/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/simplewallet/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/simplewallet/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/simplewallet/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/simplewallet/CMakeFiles/simplewallet.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/simplewallet/CMakeFiles/simplewallet.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/simplewallet/CMakeFiles/simplewallet.dir/rule
 .PHONY : src/simplewallet/CMakeFiles/simplewallet.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ simplewallet: src/simplewallet/CMakeFiles/simplewallet.dir/rule
 
 # fast build rule for target.
 simplewallet/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/simplewallet/CMakeFiles/simplewallet.dir/build.make src/simplewallet/CMakeFiles/simplewallet.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/simplewallet/CMakeFiles/simplewallet.dir/build.make src/simplewallet/CMakeFiles/simplewallet.dir/build
 .PHONY : simplewallet/fast
 
 simplewallet.o: simplewallet.cpp.o
@@ -188,7 +188,7 @@ simplewallet.o: simplewallet.cpp.o
 
 # target to build an object file
 simplewallet.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/simplewallet/CMakeFiles/simplewallet.dir/build.make src/simplewallet/CMakeFiles/simplewallet.dir/simplewallet.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/simplewallet/CMakeFiles/simplewallet.dir/build.make src/simplewallet/CMakeFiles/simplewallet.dir/simplewallet.cpp.o
 .PHONY : simplewallet.cpp.o
 
 simplewallet.i: simplewallet.cpp.i
@@ -197,7 +197,7 @@ simplewallet.i: simplewallet.cpp.i
 
 # target to preprocess a source file
 simplewallet.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/simplewallet/CMakeFiles/simplewallet.dir/build.make src/simplewallet/CMakeFiles/simplewallet.dir/simplewallet.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/simplewallet/CMakeFiles/simplewallet.dir/build.make src/simplewallet/CMakeFiles/simplewallet.dir/simplewallet.cpp.i
 .PHONY : simplewallet.cpp.i
 
 simplewallet.s: simplewallet.cpp.s
@@ -206,7 +206,7 @@ simplewallet.s: simplewallet.cpp.s
 
 # target to generate assembly for a file
 simplewallet.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/simplewallet/CMakeFiles/simplewallet.dir/build.make src/simplewallet/CMakeFiles/simplewallet.dir/simplewallet.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/simplewallet/CMakeFiles/simplewallet.dir/build.make src/simplewallet/CMakeFiles/simplewallet.dir/simplewallet.cpp.s
 .PHONY : simplewallet.cpp.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

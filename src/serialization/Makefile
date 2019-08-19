@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kgc/dinastycoin
+CMAKE_SOURCE_DIR = /home/dinastycoin/dinastycoin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kgc/dinastycoin
+CMAKE_BINARY_DIR = /home/dinastycoin/dinastycoin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles /home/kgc/dinastycoin/src/serialization/CMakeFiles/progress.marks
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/serialization/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles /home/dinastycoin/dinastycoin/src/serialization/CMakeFiles/progress.marks
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/serialization/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/serialization/clean
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/serialization/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/serialization/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/serialization/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/serialization/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/serialization/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/serialization/CMakeFiles/obj_serialization.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/serialization/CMakeFiles/obj_serialization.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/serialization/CMakeFiles/obj_serialization.dir/rule
 .PHONY : src/serialization/CMakeFiles/obj_serialization.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ obj_serialization: src/serialization/CMakeFiles/obj_serialization.dir/rule
 
 # fast build rule for target.
 obj_serialization/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/serialization/CMakeFiles/obj_serialization.dir/build.make src/serialization/CMakeFiles/obj_serialization.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/serialization/CMakeFiles/obj_serialization.dir/build.make src/serialization/CMakeFiles/obj_serialization.dir/build
 .PHONY : obj_serialization/fast
 
 # Convenience name for target.
 src/serialization/CMakeFiles/serialization.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/serialization/CMakeFiles/serialization.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/serialization/CMakeFiles/serialization.dir/rule
 .PHONY : src/serialization/CMakeFiles/serialization.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ serialization: src/serialization/CMakeFiles/serialization.dir/rule
 
 # fast build rule for target.
 serialization/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/serialization/CMakeFiles/serialization.dir/build.make src/serialization/CMakeFiles/serialization.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/serialization/CMakeFiles/serialization.dir/build.make src/serialization/CMakeFiles/serialization.dir/build
 .PHONY : serialization/fast
 
 json_object.o: json_object.cpp.o
@@ -203,7 +203,7 @@ json_object.o: json_object.cpp.o
 
 # target to build an object file
 json_object.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/serialization/CMakeFiles/obj_serialization.dir/build.make src/serialization/CMakeFiles/obj_serialization.dir/json_object.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/serialization/CMakeFiles/obj_serialization.dir/build.make src/serialization/CMakeFiles/obj_serialization.dir/json_object.cpp.o
 .PHONY : json_object.cpp.o
 
 json_object.i: json_object.cpp.i
@@ -212,7 +212,7 @@ json_object.i: json_object.cpp.i
 
 # target to preprocess a source file
 json_object.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/serialization/CMakeFiles/obj_serialization.dir/build.make src/serialization/CMakeFiles/obj_serialization.dir/json_object.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/serialization/CMakeFiles/obj_serialization.dir/build.make src/serialization/CMakeFiles/obj_serialization.dir/json_object.cpp.i
 .PHONY : json_object.cpp.i
 
 json_object.s: json_object.cpp.s
@@ -221,7 +221,7 @@ json_object.s: json_object.cpp.s
 
 # target to generate assembly for a file
 json_object.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/serialization/CMakeFiles/obj_serialization.dir/build.make src/serialization/CMakeFiles/obj_serialization.dir/json_object.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/serialization/CMakeFiles/obj_serialization.dir/build.make src/serialization/CMakeFiles/obj_serialization.dir/json_object.cpp.s
 .PHONY : json_object.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

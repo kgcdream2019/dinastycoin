@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kgc/dinastycoin
+CMAKE_SOURCE_DIR = /home/dinastycoin/dinastycoin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kgc/dinastycoin
+CMAKE_BINARY_DIR = /home/dinastycoin/dinastycoin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles /home/kgc/dinastycoin/src/wallet/api/CMakeFiles/progress.marks
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/api/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles /home/dinastycoin/dinastycoin/src/wallet/api/CMakeFiles/progress.marks
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/api/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/api/clean
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/api/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/api/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/api/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/api/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/api/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/wallet/api/CMakeFiles/wallet_api.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/api/CMakeFiles/wallet_api.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/api/CMakeFiles/wallet_api.dir/rule
 .PHONY : src/wallet/api/CMakeFiles/wallet_api.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ wallet_api: src/wallet/api/CMakeFiles/wallet_api.dir/rule
 
 # fast build rule for target.
 wallet_api/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/wallet_api.dir/build.make src/wallet/api/CMakeFiles/wallet_api.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/wallet_api.dir/build.make src/wallet/api/CMakeFiles/wallet_api.dir/build
 .PHONY : wallet_api/fast
 
 # Convenience name for target.
 src/wallet/api/CMakeFiles/obj_wallet_api.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/api/CMakeFiles/obj_wallet_api.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/api/CMakeFiles/obj_wallet_api.dir/rule
 .PHONY : src/wallet/api/CMakeFiles/obj_wallet_api.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ obj_wallet_api: src/wallet/api/CMakeFiles/obj_wallet_api.dir/rule
 
 # fast build rule for target.
 obj_wallet_api/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/build
 .PHONY : obj_wallet_api/fast
 
 address_book.o: address_book.cpp.o
@@ -203,7 +203,7 @@ address_book.o: address_book.cpp.o
 
 # target to build an object file
 address_book.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/address_book.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/address_book.cpp.o
 .PHONY : address_book.cpp.o
 
 address_book.i: address_book.cpp.i
@@ -212,7 +212,7 @@ address_book.i: address_book.cpp.i
 
 # target to preprocess a source file
 address_book.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/address_book.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/address_book.cpp.i
 .PHONY : address_book.cpp.i
 
 address_book.s: address_book.cpp.s
@@ -221,7 +221,7 @@ address_book.s: address_book.cpp.s
 
 # target to generate assembly for a file
 address_book.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/address_book.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/address_book.cpp.s
 .PHONY : address_book.cpp.s
 
 pending_transaction.o: pending_transaction.cpp.o
@@ -230,7 +230,7 @@ pending_transaction.o: pending_transaction.cpp.o
 
 # target to build an object file
 pending_transaction.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/pending_transaction.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/pending_transaction.cpp.o
 .PHONY : pending_transaction.cpp.o
 
 pending_transaction.i: pending_transaction.cpp.i
@@ -239,7 +239,7 @@ pending_transaction.i: pending_transaction.cpp.i
 
 # target to preprocess a source file
 pending_transaction.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/pending_transaction.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/pending_transaction.cpp.i
 .PHONY : pending_transaction.cpp.i
 
 pending_transaction.s: pending_transaction.cpp.s
@@ -248,7 +248,7 @@ pending_transaction.s: pending_transaction.cpp.s
 
 # target to generate assembly for a file
 pending_transaction.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/pending_transaction.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/pending_transaction.cpp.s
 .PHONY : pending_transaction.cpp.s
 
 subaddress.o: subaddress.cpp.o
@@ -257,7 +257,7 @@ subaddress.o: subaddress.cpp.o
 
 # target to build an object file
 subaddress.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/subaddress.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/subaddress.cpp.o
 .PHONY : subaddress.cpp.o
 
 subaddress.i: subaddress.cpp.i
@@ -266,7 +266,7 @@ subaddress.i: subaddress.cpp.i
 
 # target to preprocess a source file
 subaddress.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/subaddress.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/subaddress.cpp.i
 .PHONY : subaddress.cpp.i
 
 subaddress.s: subaddress.cpp.s
@@ -275,7 +275,7 @@ subaddress.s: subaddress.cpp.s
 
 # target to generate assembly for a file
 subaddress.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/subaddress.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/subaddress.cpp.s
 .PHONY : subaddress.cpp.s
 
 subaddress_account.o: subaddress_account.cpp.o
@@ -284,7 +284,7 @@ subaddress_account.o: subaddress_account.cpp.o
 
 # target to build an object file
 subaddress_account.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/subaddress_account.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/subaddress_account.cpp.o
 .PHONY : subaddress_account.cpp.o
 
 subaddress_account.i: subaddress_account.cpp.i
@@ -293,7 +293,7 @@ subaddress_account.i: subaddress_account.cpp.i
 
 # target to preprocess a source file
 subaddress_account.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/subaddress_account.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/subaddress_account.cpp.i
 .PHONY : subaddress_account.cpp.i
 
 subaddress_account.s: subaddress_account.cpp.s
@@ -302,7 +302,7 @@ subaddress_account.s: subaddress_account.cpp.s
 
 # target to generate assembly for a file
 subaddress_account.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/subaddress_account.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/subaddress_account.cpp.s
 .PHONY : subaddress_account.cpp.s
 
 transaction_history.o: transaction_history.cpp.o
@@ -311,7 +311,7 @@ transaction_history.o: transaction_history.cpp.o
 
 # target to build an object file
 transaction_history.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/transaction_history.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/transaction_history.cpp.o
 .PHONY : transaction_history.cpp.o
 
 transaction_history.i: transaction_history.cpp.i
@@ -320,7 +320,7 @@ transaction_history.i: transaction_history.cpp.i
 
 # target to preprocess a source file
 transaction_history.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/transaction_history.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/transaction_history.cpp.i
 .PHONY : transaction_history.cpp.i
 
 transaction_history.s: transaction_history.cpp.s
@@ -329,7 +329,7 @@ transaction_history.s: transaction_history.cpp.s
 
 # target to generate assembly for a file
 transaction_history.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/transaction_history.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/transaction_history.cpp.s
 .PHONY : transaction_history.cpp.s
 
 transaction_info.o: transaction_info.cpp.o
@@ -338,7 +338,7 @@ transaction_info.o: transaction_info.cpp.o
 
 # target to build an object file
 transaction_info.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/transaction_info.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/transaction_info.cpp.o
 .PHONY : transaction_info.cpp.o
 
 transaction_info.i: transaction_info.cpp.i
@@ -347,7 +347,7 @@ transaction_info.i: transaction_info.cpp.i
 
 # target to preprocess a source file
 transaction_info.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/transaction_info.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/transaction_info.cpp.i
 .PHONY : transaction_info.cpp.i
 
 transaction_info.s: transaction_info.cpp.s
@@ -356,7 +356,7 @@ transaction_info.s: transaction_info.cpp.s
 
 # target to generate assembly for a file
 transaction_info.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/transaction_info.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/transaction_info.cpp.s
 .PHONY : transaction_info.cpp.s
 
 unsigned_transaction.o: unsigned_transaction.cpp.o
@@ -365,7 +365,7 @@ unsigned_transaction.o: unsigned_transaction.cpp.o
 
 # target to build an object file
 unsigned_transaction.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/unsigned_transaction.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/unsigned_transaction.cpp.o
 .PHONY : unsigned_transaction.cpp.o
 
 unsigned_transaction.i: unsigned_transaction.cpp.i
@@ -374,7 +374,7 @@ unsigned_transaction.i: unsigned_transaction.cpp.i
 
 # target to preprocess a source file
 unsigned_transaction.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/unsigned_transaction.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/unsigned_transaction.cpp.i
 .PHONY : unsigned_transaction.cpp.i
 
 unsigned_transaction.s: unsigned_transaction.cpp.s
@@ -383,7 +383,7 @@ unsigned_transaction.s: unsigned_transaction.cpp.s
 
 # target to generate assembly for a file
 unsigned_transaction.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/unsigned_transaction.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/unsigned_transaction.cpp.s
 .PHONY : unsigned_transaction.cpp.s
 
 utils.o: utils.cpp.o
@@ -392,7 +392,7 @@ utils.o: utils.cpp.o
 
 # target to build an object file
 utils.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/utils.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/utils.cpp.o
 .PHONY : utils.cpp.o
 
 utils.i: utils.cpp.i
@@ -401,7 +401,7 @@ utils.i: utils.cpp.i
 
 # target to preprocess a source file
 utils.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/utils.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/utils.cpp.i
 .PHONY : utils.cpp.i
 
 utils.s: utils.cpp.s
@@ -410,7 +410,7 @@ utils.s: utils.cpp.s
 
 # target to generate assembly for a file
 utils.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/utils.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/utils.cpp.s
 .PHONY : utils.cpp.s
 
 wallet.o: wallet.cpp.o
@@ -419,7 +419,7 @@ wallet.o: wallet.cpp.o
 
 # target to build an object file
 wallet.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/wallet.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/wallet.cpp.o
 .PHONY : wallet.cpp.o
 
 wallet.i: wallet.cpp.i
@@ -428,7 +428,7 @@ wallet.i: wallet.cpp.i
 
 # target to preprocess a source file
 wallet.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/wallet.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/wallet.cpp.i
 .PHONY : wallet.cpp.i
 
 wallet.s: wallet.cpp.s
@@ -437,7 +437,7 @@ wallet.s: wallet.cpp.s
 
 # target to generate assembly for a file
 wallet.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/wallet.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/wallet.cpp.s
 .PHONY : wallet.cpp.s
 
 wallet_manager.o: wallet_manager.cpp.o
@@ -446,7 +446,7 @@ wallet_manager.o: wallet_manager.cpp.o
 
 # target to build an object file
 wallet_manager.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/wallet_manager.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/wallet_manager.cpp.o
 .PHONY : wallet_manager.cpp.o
 
 wallet_manager.i: wallet_manager.cpp.i
@@ -455,7 +455,7 @@ wallet_manager.i: wallet_manager.cpp.i
 
 # target to preprocess a source file
 wallet_manager.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/wallet_manager.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/wallet_manager.cpp.i
 .PHONY : wallet_manager.cpp.i
 
 wallet_manager.s: wallet_manager.cpp.s
@@ -464,7 +464,7 @@ wallet_manager.s: wallet_manager.cpp.s
 
 # target to generate assembly for a file
 wallet_manager.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/wallet_manager.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/wallet/api/CMakeFiles/obj_wallet_api.dir/build.make src/wallet/api/CMakeFiles/obj_wallet_api.dir/wallet_manager.cpp.s
 .PHONY : wallet_manager.cpp.s
 
 # Help Target
@@ -523,6 +523,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

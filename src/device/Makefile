@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kgc/dinastycoin
+CMAKE_SOURCE_DIR = /home/dinastycoin/dinastycoin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kgc/dinastycoin
+CMAKE_BINARY_DIR = /home/dinastycoin/dinastycoin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles /home/kgc/dinastycoin/src/device/CMakeFiles/progress.marks
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles /home/dinastycoin/dinastycoin/src/device/CMakeFiles/progress.marks
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device/clean
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/device/CMakeFiles/device.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device/CMakeFiles/device.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device/CMakeFiles/device.dir/rule
 .PHONY : src/device/CMakeFiles/device.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ device: src/device/CMakeFiles/device.dir/rule
 
 # fast build rule for target.
 device/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/device.dir/build.make src/device/CMakeFiles/device.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/device.dir/build.make src/device/CMakeFiles/device.dir/build
 .PHONY : device/fast
 
 # Convenience name for target.
 src/device/CMakeFiles/obj_device.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device/CMakeFiles/obj_device.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/device/CMakeFiles/obj_device.dir/rule
 .PHONY : src/device/CMakeFiles/obj_device.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ obj_device: src/device/CMakeFiles/obj_device.dir/rule
 
 # fast build rule for target.
 obj_device/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/build
 .PHONY : obj_device/fast
 
 device.o: device.cpp.o
@@ -203,7 +203,7 @@ device.o: device.cpp.o
 
 # target to build an object file
 device.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device.cpp.o
 .PHONY : device.cpp.o
 
 device.i: device.cpp.i
@@ -212,7 +212,7 @@ device.i: device.cpp.i
 
 # target to preprocess a source file
 device.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device.cpp.i
 .PHONY : device.cpp.i
 
 device.s: device.cpp.s
@@ -221,7 +221,7 @@ device.s: device.cpp.s
 
 # target to generate assembly for a file
 device.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device.cpp.s
 .PHONY : device.cpp.s
 
 device_default.o: device_default.cpp.o
@@ -230,7 +230,7 @@ device_default.o: device_default.cpp.o
 
 # target to build an object file
 device_default.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_default.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_default.cpp.o
 .PHONY : device_default.cpp.o
 
 device_default.i: device_default.cpp.i
@@ -239,7 +239,7 @@ device_default.i: device_default.cpp.i
 
 # target to preprocess a source file
 device_default.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_default.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_default.cpp.i
 .PHONY : device_default.cpp.i
 
 device_default.s: device_default.cpp.s
@@ -248,7 +248,7 @@ device_default.s: device_default.cpp.s
 
 # target to generate assembly for a file
 device_default.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_default.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_default.cpp.s
 .PHONY : device_default.cpp.s
 
 device_io_hid.o: device_io_hid.cpp.o
@@ -257,7 +257,7 @@ device_io_hid.o: device_io_hid.cpp.o
 
 # target to build an object file
 device_io_hid.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_io_hid.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_io_hid.cpp.o
 .PHONY : device_io_hid.cpp.o
 
 device_io_hid.i: device_io_hid.cpp.i
@@ -266,7 +266,7 @@ device_io_hid.i: device_io_hid.cpp.i
 
 # target to preprocess a source file
 device_io_hid.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_io_hid.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_io_hid.cpp.i
 .PHONY : device_io_hid.cpp.i
 
 device_io_hid.s: device_io_hid.cpp.s
@@ -275,7 +275,7 @@ device_io_hid.s: device_io_hid.cpp.s
 
 # target to generate assembly for a file
 device_io_hid.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_io_hid.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_io_hid.cpp.s
 .PHONY : device_io_hid.cpp.s
 
 device_ledger.o: device_ledger.cpp.o
@@ -284,7 +284,7 @@ device_ledger.o: device_ledger.cpp.o
 
 # target to build an object file
 device_ledger.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_ledger.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_ledger.cpp.o
 .PHONY : device_ledger.cpp.o
 
 device_ledger.i: device_ledger.cpp.i
@@ -293,7 +293,7 @@ device_ledger.i: device_ledger.cpp.i
 
 # target to preprocess a source file
 device_ledger.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_ledger.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_ledger.cpp.i
 .PHONY : device_ledger.cpp.i
 
 device_ledger.s: device_ledger.cpp.s
@@ -302,7 +302,7 @@ device_ledger.s: device_ledger.cpp.s
 
 # target to generate assembly for a file
 device_ledger.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_ledger.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_ledger.cpp.s
 .PHONY : device_ledger.cpp.s
 
 log.o: log.cpp.o
@@ -311,7 +311,7 @@ log.o: log.cpp.o
 
 # target to build an object file
 log.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/log.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/log.cpp.o
 .PHONY : log.cpp.o
 
 log.i: log.cpp.i
@@ -320,7 +320,7 @@ log.i: log.cpp.i
 
 # target to preprocess a source file
 log.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/log.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/log.cpp.i
 .PHONY : log.cpp.i
 
 log.s: log.cpp.s
@@ -329,7 +329,7 @@ log.s: log.cpp.s
 
 # target to generate assembly for a file
 log.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/log.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/log.cpp.s
 .PHONY : log.cpp.s
 
 # Help Target
@@ -373,6 +373,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

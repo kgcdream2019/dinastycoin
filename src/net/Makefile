@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kgc/dinastycoin
+CMAKE_SOURCE_DIR = /home/dinastycoin/dinastycoin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kgc/dinastycoin
+CMAKE_BINARY_DIR = /home/dinastycoin/dinastycoin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles /home/kgc/dinastycoin/src/net/CMakeFiles/progress.marks
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/net/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles /home/dinastycoin/dinastycoin/src/net/CMakeFiles/progress.marks
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/net/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/net/clean
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/net/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/net/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/net/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/net/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/net/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/net/CMakeFiles/net.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/net/CMakeFiles/net.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/net/CMakeFiles/net.dir/rule
 .PHONY : src/net/CMakeFiles/net.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ net: src/net/CMakeFiles/net.dir/rule
 
 # fast build rule for target.
 net/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/net.dir/build.make src/net/CMakeFiles/net.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/net.dir/build.make src/net/CMakeFiles/net.dir/build
 .PHONY : net/fast
 
 # Convenience name for target.
 src/net/CMakeFiles/obj_net.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/net/CMakeFiles/obj_net.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/net/CMakeFiles/obj_net.dir/rule
 .PHONY : src/net/CMakeFiles/obj_net.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ obj_net: src/net/CMakeFiles/obj_net.dir/rule
 
 # fast build rule for target.
 obj_net/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/build
 .PHONY : obj_net/fast
 
 error.o: error.cpp.o
@@ -203,7 +203,7 @@ error.o: error.cpp.o
 
 # target to build an object file
 error.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/error.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/error.cpp.o
 .PHONY : error.cpp.o
 
 error.i: error.cpp.i
@@ -212,7 +212,7 @@ error.i: error.cpp.i
 
 # target to preprocess a source file
 error.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/error.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/error.cpp.i
 .PHONY : error.cpp.i
 
 error.s: error.cpp.s
@@ -221,7 +221,7 @@ error.s: error.cpp.s
 
 # target to generate assembly for a file
 error.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/error.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/error.cpp.s
 .PHONY : error.cpp.s
 
 i2p_address.o: i2p_address.cpp.o
@@ -230,7 +230,7 @@ i2p_address.o: i2p_address.cpp.o
 
 # target to build an object file
 i2p_address.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/i2p_address.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/i2p_address.cpp.o
 .PHONY : i2p_address.cpp.o
 
 i2p_address.i: i2p_address.cpp.i
@@ -239,7 +239,7 @@ i2p_address.i: i2p_address.cpp.i
 
 # target to preprocess a source file
 i2p_address.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/i2p_address.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/i2p_address.cpp.i
 .PHONY : i2p_address.cpp.i
 
 i2p_address.s: i2p_address.cpp.s
@@ -248,7 +248,7 @@ i2p_address.s: i2p_address.cpp.s
 
 # target to generate assembly for a file
 i2p_address.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/i2p_address.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/i2p_address.cpp.s
 .PHONY : i2p_address.cpp.s
 
 parse.o: parse.cpp.o
@@ -257,7 +257,7 @@ parse.o: parse.cpp.o
 
 # target to build an object file
 parse.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/parse.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/parse.cpp.o
 .PHONY : parse.cpp.o
 
 parse.i: parse.cpp.i
@@ -266,7 +266,7 @@ parse.i: parse.cpp.i
 
 # target to preprocess a source file
 parse.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/parse.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/parse.cpp.i
 .PHONY : parse.cpp.i
 
 parse.s: parse.cpp.s
@@ -275,7 +275,7 @@ parse.s: parse.cpp.s
 
 # target to generate assembly for a file
 parse.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/parse.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/parse.cpp.s
 .PHONY : parse.cpp.s
 
 socks.o: socks.cpp.o
@@ -284,7 +284,7 @@ socks.o: socks.cpp.o
 
 # target to build an object file
 socks.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/socks.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/socks.cpp.o
 .PHONY : socks.cpp.o
 
 socks.i: socks.cpp.i
@@ -293,7 +293,7 @@ socks.i: socks.cpp.i
 
 # target to preprocess a source file
 socks.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/socks.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/socks.cpp.i
 .PHONY : socks.cpp.i
 
 socks.s: socks.cpp.s
@@ -302,7 +302,7 @@ socks.s: socks.cpp.s
 
 # target to generate assembly for a file
 socks.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/socks.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/socks.cpp.s
 .PHONY : socks.cpp.s
 
 socks_connect.o: socks_connect.cpp.o
@@ -311,7 +311,7 @@ socks_connect.o: socks_connect.cpp.o
 
 # target to build an object file
 socks_connect.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/socks_connect.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/socks_connect.cpp.o
 .PHONY : socks_connect.cpp.o
 
 socks_connect.i: socks_connect.cpp.i
@@ -320,7 +320,7 @@ socks_connect.i: socks_connect.cpp.i
 
 # target to preprocess a source file
 socks_connect.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/socks_connect.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/socks_connect.cpp.i
 .PHONY : socks_connect.cpp.i
 
 socks_connect.s: socks_connect.cpp.s
@@ -329,7 +329,7 @@ socks_connect.s: socks_connect.cpp.s
 
 # target to generate assembly for a file
 socks_connect.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/socks_connect.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/socks_connect.cpp.s
 .PHONY : socks_connect.cpp.s
 
 tor_address.o: tor_address.cpp.o
@@ -338,7 +338,7 @@ tor_address.o: tor_address.cpp.o
 
 # target to build an object file
 tor_address.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/tor_address.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/tor_address.cpp.o
 .PHONY : tor_address.cpp.o
 
 tor_address.i: tor_address.cpp.i
@@ -347,7 +347,7 @@ tor_address.i: tor_address.cpp.i
 
 # target to preprocess a source file
 tor_address.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/tor_address.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/tor_address.cpp.i
 .PHONY : tor_address.cpp.i
 
 tor_address.s: tor_address.cpp.s
@@ -356,7 +356,7 @@ tor_address.s: tor_address.cpp.s
 
 # target to generate assembly for a file
 tor_address.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/tor_address.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/net/CMakeFiles/obj_net.dir/build.make src/net/CMakeFiles/obj_net.dir/tor_address.cpp.s
 .PHONY : tor_address.cpp.s
 
 # Help Target
@@ -403,6 +403,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

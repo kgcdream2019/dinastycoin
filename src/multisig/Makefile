@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kgc/dinastycoin
+CMAKE_SOURCE_DIR = /home/dinastycoin/dinastycoin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kgc/dinastycoin
+CMAKE_BINARY_DIR = /home/dinastycoin/dinastycoin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles /home/kgc/dinastycoin/src/multisig/CMakeFiles/progress.marks
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles /home/dinastycoin/dinastycoin/src/multisig/CMakeFiles/progress.marks
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/clean
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/multisig/CMakeFiles/multisig.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/CMakeFiles/multisig.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/CMakeFiles/multisig.dir/rule
 .PHONY : src/multisig/CMakeFiles/multisig.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ multisig: src/multisig/CMakeFiles/multisig.dir/rule
 
 # fast build rule for target.
 multisig/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/multisig/CMakeFiles/multisig.dir/build.make src/multisig/CMakeFiles/multisig.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/multisig/CMakeFiles/multisig.dir/build.make src/multisig/CMakeFiles/multisig.dir/build
 .PHONY : multisig/fast
 
 # Convenience name for target.
 src/multisig/CMakeFiles/obj_multisig.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/CMakeFiles/obj_multisig.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/CMakeFiles/obj_multisig.dir/rule
 .PHONY : src/multisig/CMakeFiles/obj_multisig.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ obj_multisig: src/multisig/CMakeFiles/obj_multisig.dir/rule
 
 # fast build rule for target.
 obj_multisig/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/build
 .PHONY : obj_multisig/fast
 
 multisig.o: multisig.cpp.o
@@ -203,7 +203,7 @@ multisig.o: multisig.cpp.o
 
 # target to build an object file
 multisig.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/multisig.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/multisig.cpp.o
 .PHONY : multisig.cpp.o
 
 multisig.i: multisig.cpp.i
@@ -212,7 +212,7 @@ multisig.i: multisig.cpp.i
 
 # target to preprocess a source file
 multisig.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/multisig.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/multisig.cpp.i
 .PHONY : multisig.cpp.i
 
 multisig.s: multisig.cpp.s
@@ -221,7 +221,7 @@ multisig.s: multisig.cpp.s
 
 # target to generate assembly for a file
 multisig.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/multisig.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/multisig.cpp.s
 .PHONY : multisig.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

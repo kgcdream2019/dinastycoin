@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kgc/dinastycoin
+CMAKE_SOURCE_DIR = /home/dinastycoin/dinastycoin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kgc/dinastycoin
+CMAKE_BINARY_DIR = /home/dinastycoin/dinastycoin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles /home/kgc/dinastycoin/src/daemon/CMakeFiles/progress.marks
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/daemon/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kgc/dinastycoin/CMakeFiles 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles /home/dinastycoin/dinastycoin/src/daemon/CMakeFiles/progress.marks
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/daemon/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinastycoin/dinastycoin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/daemon/clean
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/daemon/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/daemon/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/daemon/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/daemon/preinstall
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/daemon/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/daemon/CMakeFiles/daemon.dir/rule:
-	cd /home/kgc/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/daemon/CMakeFiles/daemon.dir/rule
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f CMakeFiles/Makefile2 src/daemon/CMakeFiles/daemon.dir/rule
 .PHONY : src/daemon/CMakeFiles/daemon.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ daemon: src/daemon/CMakeFiles/daemon.dir/rule
 
 # fast build rule for target.
 daemon/fast:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/build
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/build
 .PHONY : daemon/fast
 
 command_parser_executor.o: command_parser_executor.cpp.o
@@ -188,7 +188,7 @@ command_parser_executor.o: command_parser_executor.cpp.o
 
 # target to build an object file
 command_parser_executor.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/command_parser_executor.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/command_parser_executor.cpp.o
 .PHONY : command_parser_executor.cpp.o
 
 command_parser_executor.i: command_parser_executor.cpp.i
@@ -197,7 +197,7 @@ command_parser_executor.i: command_parser_executor.cpp.i
 
 # target to preprocess a source file
 command_parser_executor.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/command_parser_executor.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/command_parser_executor.cpp.i
 .PHONY : command_parser_executor.cpp.i
 
 command_parser_executor.s: command_parser_executor.cpp.s
@@ -206,7 +206,7 @@ command_parser_executor.s: command_parser_executor.cpp.s
 
 # target to generate assembly for a file
 command_parser_executor.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/command_parser_executor.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/command_parser_executor.cpp.s
 .PHONY : command_parser_executor.cpp.s
 
 command_server.o: command_server.cpp.o
@@ -215,7 +215,7 @@ command_server.o: command_server.cpp.o
 
 # target to build an object file
 command_server.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/command_server.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/command_server.cpp.o
 .PHONY : command_server.cpp.o
 
 command_server.i: command_server.cpp.i
@@ -224,7 +224,7 @@ command_server.i: command_server.cpp.i
 
 # target to preprocess a source file
 command_server.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/command_server.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/command_server.cpp.i
 .PHONY : command_server.cpp.i
 
 command_server.s: command_server.cpp.s
@@ -233,7 +233,7 @@ command_server.s: command_server.cpp.s
 
 # target to generate assembly for a file
 command_server.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/command_server.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/command_server.cpp.s
 .PHONY : command_server.cpp.s
 
 daemon.o: daemon.cpp.o
@@ -242,7 +242,7 @@ daemon.o: daemon.cpp.o
 
 # target to build an object file
 daemon.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/daemon.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/daemon.cpp.o
 .PHONY : daemon.cpp.o
 
 daemon.i: daemon.cpp.i
@@ -251,7 +251,7 @@ daemon.i: daemon.cpp.i
 
 # target to preprocess a source file
 daemon.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/daemon.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/daemon.cpp.i
 .PHONY : daemon.cpp.i
 
 daemon.s: daemon.cpp.s
@@ -260,7 +260,7 @@ daemon.s: daemon.cpp.s
 
 # target to generate assembly for a file
 daemon.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/daemon.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/daemon.cpp.s
 .PHONY : daemon.cpp.s
 
 executor.o: executor.cpp.o
@@ -269,7 +269,7 @@ executor.o: executor.cpp.o
 
 # target to build an object file
 executor.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/executor.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/executor.cpp.o
 .PHONY : executor.cpp.o
 
 executor.i: executor.cpp.i
@@ -278,7 +278,7 @@ executor.i: executor.cpp.i
 
 # target to preprocess a source file
 executor.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/executor.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/executor.cpp.i
 .PHONY : executor.cpp.i
 
 executor.s: executor.cpp.s
@@ -287,7 +287,7 @@ executor.s: executor.cpp.s
 
 # target to generate assembly for a file
 executor.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/executor.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/executor.cpp.s
 .PHONY : executor.cpp.s
 
 main.o: main.cpp.o
@@ -296,7 +296,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/main.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -305,7 +305,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/main.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -314,7 +314,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/main.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 rpc_command_executor.o: rpc_command_executor.cpp.o
@@ -323,7 +323,7 @@ rpc_command_executor.o: rpc_command_executor.cpp.o
 
 # target to build an object file
 rpc_command_executor.cpp.o:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/rpc_command_executor.cpp.o
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/rpc_command_executor.cpp.o
 .PHONY : rpc_command_executor.cpp.o
 
 rpc_command_executor.i: rpc_command_executor.cpp.i
@@ -332,7 +332,7 @@ rpc_command_executor.i: rpc_command_executor.cpp.i
 
 # target to preprocess a source file
 rpc_command_executor.cpp.i:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/rpc_command_executor.cpp.i
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/rpc_command_executor.cpp.i
 .PHONY : rpc_command_executor.cpp.i
 
 rpc_command_executor.s: rpc_command_executor.cpp.s
@@ -341,7 +341,7 @@ rpc_command_executor.s: rpc_command_executor.cpp.s
 
 # target to generate assembly for a file
 rpc_command_executor.cpp.s:
-	cd /home/kgc/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/rpc_command_executor.cpp.s
+	cd /home/dinastycoin/dinastycoin && $(MAKE) -f src/daemon/CMakeFiles/daemon.dir/build.make src/daemon/CMakeFiles/daemon.dir/rpc_command_executor.cpp.s
 .PHONY : rpc_command_executor.cpp.s
 
 # Help Target
@@ -387,6 +387,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kgc/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dinastycoin/dinastycoin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

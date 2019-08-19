@@ -980,8 +980,8 @@ Questa transazione verrà sbloccata al blocco %llu, in approssimativamente %s gi
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6830"/>
-        <source>Donating %s %s to The Dinastycoin Project (donate.dinastyofreedom.org or %s).</source>
-        <translation>Donare %s %s a The Dinastycoin Project (donate.dinastyofreedom.org o %s).</translation>
+        <source>Donating %s %s to The Dinastycoin Project (donate.dinastycoin.com or %s).</source>
+        <translation>Donare %s %s a The Dinastycoin Project (donate.dinastycoin.com o %s).</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6832"/>
@@ -1482,7 +1482,7 @@ Questa transazione verrà sbloccata al blocco %llu, in approssimativamente %s gi
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2157"/>
-        <source>Welcome to Dinastycoin and financial privacy. For more information, see https://www.dinastyofreedom.org//</source>
+        <source>Welcome to Dinastycoin and financial privacy. For more information, see https://www.dinastycoin.com//</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1573,8 +1573,8 @@ Amount, Spent(&quot;T&quot;|&quot;F&quot;), &quot;frozen&quot;|&quot;locked&quot
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2797"/>
-        <source>Donate &lt;amount&gt; to the development team (donate.dinastyofreedom.org).</source>
-        <translation>Dona &lt;amount&gt; al team di sviluppo (donate.dinastyofreedom.org).</translation>
+        <source>Donate &lt;amount&gt; to the development team (donate.dinastycoin.com).</source>
+        <translation>Dona &lt;amount&gt; al team di sviluppo (donate.dinastycoin.com).</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2804"/>
