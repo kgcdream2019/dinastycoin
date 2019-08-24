@@ -87,14 +87,16 @@ namespace cryptonote {
     const int target_minutes = target / 60;
     const int emission_speed_factor = EMISSION_SPEED_FACTOR_PER_MINUTE - (target_minutes-1);
     //**********************************PREMINE Settings**************************************
-    const uint64_t premine = 1920000000000000000000U;
-    if (median_weight > 0 && already_generated_coins < premine) {
-      reward = premine;
-      //this is newly added code for debug
-      MGINFO_YELLOW("--------------premine reward    " << reward << "    already_generated_coins   " << already_generated_coins << ENDL);
-      //end
-      return true;
+    const u_int64_t premine = 1920000000000000000000U;
+
+    const u_int64_t calc_premine = 937500000000000000U; // shift premine 11 times   premine >> 11 => 937500000000000000
+    u_int64_t calc_already_created = already_generated_coins >> 11;
+    if (median_weight > 0 && calc_already_created < calc_premine) {
+        MGINFO_YELLOW("--------------already_generated_coins  " << already_generated_coins << ENDL);
+        reward = 1500000000000000000U;
+        return true;
     }
+
     //****************************************************************************************
     
     uint64_t base_reward = (MONEY_SUPPLY - already_generated_coins) >> emission_speed_factor;

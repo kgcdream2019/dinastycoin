@@ -111,14 +111,14 @@ static const struct {
   { 7, 120, 0, 1532356226 },
 
   // version 8 starts from block 1685555, which is on or around the 18th of October, 2018. Fork time finalised on 2018-09-02.
-  { 8, 72875, 0, 1541572216 },
+  { 8, 140, 0, 1541572216 },
 
   // version 9 starts from block 1686275, which is on or around the 19th of October, 2018. Fork time finalised on 2018-09-02.
-  { 9, 73595, 0, 1541846405 },
+  { 9, 160, 0, 1541846405 },
   // version 10 starts from block 77850
-  { 10, 77850, 0, 1542911469 },
-  { 11, 183478, 0, 1556115272 },
-  { 12, 184198, 0, 1556201672 },
+  { 10, 180, 0, 1542911469 },
+  { 11, 200, 0, 1556115272 },
+  { 12, 220, 0, 1556201672 },
 };
 
 static const uint64_t mainnet_hard_fork_version_1_till = ((uint64_t)(19));
