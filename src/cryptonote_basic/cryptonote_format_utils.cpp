@@ -927,16 +927,26 @@ namespace cryptonote
       decimal_point = default_decimal_point;
     switch (decimal_point)
     {
-      case 12:
-        return "dinastycoin";
+      // case 12:
+      //   return "dinastycoin";
+      // case 9:
+      //   return "millidcy";
+      // case 6:
+      //   return "microdcy";
+      // case 3:
+      //   return "nanodcy";
+      // case 0:
+      //   return "picodcy";
+      // default:
+      //   ASSERT_MES_AND_THROW("Invalid decimal point specification: " << decimal_point);
       case 9:
-        return "millidcy";
+        return "dinastycoin";
       case 6:
-        return "microdcy";
+        return "millidcy";
       case 3:
-        return "nanodcy";
+        return "microdcy";
       case 0:
-        return "picodcy";
+        return "nanodcy";
       default:
         ASSERT_MES_AND_THROW("Invalid decimal point specification: " << decimal_point);
     }

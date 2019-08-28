@@ -51,7 +51,8 @@
 #define BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW               60
 
 // MONEY_SUPPLY - total number coins to be generated
-#define MONEY_SUPPLY                                    uint64_t(2000440737095516150)
+//#define MONEY_SUPPLY ((uint64_t)(2000440737095516150000))
+#define MONEY_SUPPLY ((uint64_t)(2000440737095516150))
 #define EMISSION_SPEED_FACTOR_PER_MINUTE                (18)
 #define FINAL_SUBSIDY_PER_MINUTE                        ((uint64_t)300000000) // 3 * pow(10, 8)
 
