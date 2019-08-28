@@ -1722,7 +1722,7 @@ Om argumentet &quot;tag_description&quot; anges, så tilldelas taggen &lt;taggna
  ask-password &lt;0|1|2   (or never|action|decrypt)&gt;
    action: ask the password before many actions such as transfer, etc
    decrypt: same as action, but keeps the spend key encrypted in memory when not needed
- unit &lt;dinastycoin|millidcy|microdcy|nanodcy|picodcy&gt;
+ unit &lt;dinastycoin|millidcy|microdcy|nanodcy&gt;
    Set the default dinastycoin (sub-)unit.
  min-outputs-count [n]
    Try to keep at least that many outputs of value at least min-outputs-value.
@@ -3207,8 +3207,8 @@ Key Image, &quot;absolute&quot;, list of rings</source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3301"/>
-        <source>dinastycoin, millidcy, microdcy, nanodcy, picodcy</source>
-        <translation>dinastycoin, millidcy, microdcy, nanodcy, picodcy</translation>
+        <source>dinastycoin, millidcy, microdcy, nanodcy</source>
+        <translation>dinastycoin, millidcy, microdcy, nanodcy</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3312"/>
