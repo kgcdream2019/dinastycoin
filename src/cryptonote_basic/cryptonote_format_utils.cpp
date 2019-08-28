@@ -902,9 +902,9 @@ namespace cryptonote
   //---------------------------------------------------------------
   void set_default_decimal_point(unsigned int decimal_point)
   {
+    // zealousWang: remove 12 from decimal_point
     switch (decimal_point)
     {
-      case 12:
       case 9:
       case 6:
       case 3:
